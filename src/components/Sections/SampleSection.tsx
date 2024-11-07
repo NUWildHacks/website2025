@@ -1,9 +1,7 @@
 import React from "react";
 import "./SampleSection.scss";
 
-interface ISampleSection {
-  
-};
+interface ISampleSection {}
 
 export const SampleSection: React.FC<ISampleSection> = () => {
   return <div>some words</div>;

@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "lint:prettier": "prettier --list-different src"
+    "lint:prettier": "prettier --list-different src",
+    "lint:format": "prettier --write src"
   },
   "dependencies": {
     "react": "^18.3.1",
