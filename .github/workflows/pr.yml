@@ -20,10 +20,10 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - name: Install dependencies
-        run: \
-          npm install yarn --global
-          yarn install
+      - name: Install Yarn
+        run: npm install yarn --global
+      - name: Install Yarn
+        run: yarn install
       - name: Check formatting with Prettier
         run: yarn lint:prettier
   build:
