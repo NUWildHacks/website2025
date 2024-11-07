@@ -1,7 +1,11 @@
 import React from "react";
 import "./Navigation.scss";
 
-export const Navigation: React.FC = () => {
+interface INavigation {
+  
+};
+
+export const Navigation: React.FC<INavigation> = () => {
   return <div>some words</div>;
 };
 
