@@ -22,7 +22,7 @@ jobs:
           cache: npm
       - name: Install Yarn
         run: npm install yarn --global
-      - name: Install Yarn
+      - name: Install dependencies
         run: yarn install
       - name: Check formatting with Prettier
         run: yarn lint:prettier
@@ -35,8 +35,10 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - name: Install dependencies
+      - name: Install Yarn
         run: npm install yarn --global
+      - name: Install dependencies
+        run: yarn install
       - name: Build website
         run: yarn build
 
