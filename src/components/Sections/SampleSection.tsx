@@ -1,13 +1,10 @@
-import React from 'react';
-import './SampleSection.scss';
+import React from "react";
+import "./SampleSection.scss";
 
-export const SampleSection: React.FC = () => {
-    return (
-        <div>
-            some words
-        </div>
-    );
+interface ISampleSection {}
+
+export const SampleSection: React.FC<ISampleSection> = () => {
+  return <div>some words</div>;
 };
 
 export default SampleSection;
-
