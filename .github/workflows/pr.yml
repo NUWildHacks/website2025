@@ -21,9 +21,11 @@ jobs:
           node-version: 18
           cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: \
+          npm install yarn --global
+          yarn install
       - name: Check formatting with Prettier
-        run: npm run lint:prettier
+        run: yarn lint:prettier
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -34,7 +36,7 @@ jobs:
           node-version: 18
           cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: npm install yarn --global
       - name: Build website
-        run: npm run build
+        run: yarn build
 
