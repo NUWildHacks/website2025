@@ -11,9 +11,7 @@ export const Footer: React.FC<IFooter> = () => {
         <img src={reactLogo} alt="Placeholder" />
         <h2>WildHacks 2025</h2>
       </div>
-      <div className="footer__flexbox">
-        Something should go here eventually
-      </div>
+      <div className="footer__flexbox">Something should go here eventually</div>
       <div>
         <div className="footer__flexbox">
           <a href="https://www.instagram.com/wildhacks/">Instagram</a>
