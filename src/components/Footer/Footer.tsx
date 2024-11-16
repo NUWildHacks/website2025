@@ -14,8 +14,15 @@ export const Footer: React.FC<IFooter> = () => {
       <div className="footer__flexbox">Something should go here eventually</div>
       <div>
         <div className="footer__flexbox">
-          <a href="https://www.instagram.com/wildhacks/">Instagram</a>
-          <a href="https://www.linkedin.com/company/wildhacks/">LinkedIn</a>
+          <a href="https://www.instagram.com/wildhacks/" rel="noreferrer">
+            Instagram
+          </a>
+          <a
+            href="https://www.linkedin.com/company/wildhacks/"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
           <a href="mailto:wildhacks@northwestern.edu">Email</a>
         </div>
       </div>
