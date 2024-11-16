@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import reactLogo from "../../assets/react.svg";
 import "./Footer.scss";
 
@@ -15,15 +18,17 @@ export const Footer: React.FC<IFooter> = () => {
       <div>
         <div className="footer__flexbox">
           <a href="https://www.instagram.com/wildhacks/" rel="noreferrer">
-            Instagram
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             href="https://www.linkedin.com/company/wildhacks/"
             rel="noreferrer"
           >
-            LinkedIn
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="mailto:wildhacks@northwestern.edu">Email</a>
+          <a href="mailto:wildhacks@northwestern.edu">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
       </div>
     </div>
