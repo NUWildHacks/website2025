@@ -17,10 +17,22 @@
     display: flex;
     flex-direction: row;
     gap: 1em;
+    text-wrap: nowrap;
+    align-items: center;
+
+    .footer__image {
+      img {
+        width: 6rem;
+      }
+    }
   }
 
   h2 {
     font-weight: 900;
+  }
+
+  a {
+    color: colors.$global-light;
   }
 }
 
@@ -29,6 +41,7 @@
     flex-direction: column;
 
     .footer__flexbox {
+      padding: 0.5rem;
       width: 100%;
       align-items: center;
       justify-content: center;
