@@ -5,14 +5,14 @@ import People from "./People";
 interface IPhotoBar {}
 
 export const PhotoBar: React.FC<IPhotoBar> = () => {
-  const timePerPerson = 2;
+  const secondsPerPerson = 2;
   return (
     <div id="photobar">
       <h2>Meet our Team</h2>
       <div
         className="photobar__animation"
         style={{
-          animationDuration: `${(People.length * timePerPerson).toString()}s`,
+          animationDuration: `${(People.length * secondsPerPerson).toString()}s`,
         }}
       >
         {People.map((person: IPerson, i) => (
