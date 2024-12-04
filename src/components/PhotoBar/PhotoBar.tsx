@@ -5,7 +5,7 @@ import People from "./People";
 interface IPhotoBar {}
 
 export const PhotoBar: React.FC<IPhotoBar> = () => {
-  const secondsPerPerson = 2;
+  const secondsPerPerson = 5;
   return (
     <div id="photobar">
       <h2>Meet our Team</h2>
