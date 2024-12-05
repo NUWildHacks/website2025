@@ -1,5 +1,68 @@
 @use "../../shared/colors";
 
 .header__box {
-  background-color: colors.$global-cloud-blue;
+  background-color: colors.$global-very-dark-green;
+  display: flex;
+  justify-content: flex-end; /* Aligns all buttons to the right */
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 15px; /* Adds space between buttons */
+}
+
+.header__button {
+  background-color: colors.$global-dark-green; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: GentiumBookPlus, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), /* Main shadow */
+              0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+  &:hover {
+    background-color: colors.$global-very-dark-green; /* Hover color */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3), /* Enhanced shadow */
+                0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Lift effect */
+  }
+
+  &:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Pressed shadow */
+    transform: translateY(2px); /* Depress effect */
+  }
+}
+
+
+.header__d_button {
+  background-color: colors.$global-light-green; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: GentiumBookPlus, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2), /* Main shadow */
+              0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+  &:hover {
+    background-color: colors.$global-very-dark-green; /* Hover color */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3), /* Enhanced shadow */
+                0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Lift effect */
+  }
+
+  &:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Pressed shadow */
+    transform: translateY(2px); /* Depress effect */
+  }
 }
