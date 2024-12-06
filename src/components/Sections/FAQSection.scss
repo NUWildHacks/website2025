@@ -3,11 +3,57 @@
 
 
 .wrapper {
-  // &-section {
-
-  // }
   &-content {
+    // padding: 15em 0;
     width: 60%;
     margin: 0 auto;
+
+    .faq-grid {
+      display: flex;
+      column-gap: 8em;
+
+      .faq-column {
+
+        &>.faq-item {
+          flex: calc(50% - 4em);
+          cursor: pointer;
+
+          .faq-header {
+            display: flex;
+            align-items: center;
+            padding: 2em 0;
+
+            &-number {
+              font-size: 16px;
+              line-height: 1.3;
+              font-weight: 700;
+            }
+
+            &-question {
+              line-height: 1.3;
+              font-weight: 400;
+              margin: 0 0 0 2em;
+
+            }
+          }
+
+          .faq-dropdown {
+            overflow: hidden;
+            height: 0px;
+            border-bottom: 1px solid white;
+            padding: 0 4em 0 3em;
+
+            p {
+              line-height: 1.3;
+              margin: 0;
+
+              &.faq-text {
+                padding: 0.5em 0 1.5em 0;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
