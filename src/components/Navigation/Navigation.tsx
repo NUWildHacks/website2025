@@ -4,7 +4,7 @@ import "./Navigation.scss";
 interface INavigation {}
 
 export const Navigation: React.FC<INavigation> = () => {
-  return <div>some words</div>;
+  return <div>some fdsfdasafdsfasd</div>;
 };
 
 export default Navigation;

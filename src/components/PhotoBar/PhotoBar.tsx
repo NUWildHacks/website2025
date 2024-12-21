@@ -5,10 +5,10 @@ import People from "./People";
 interface IPhotoBar {}
 
 export const PhotoBar: React.FC<IPhotoBar> = () => {
-  const secondsPerPerson = 5;
+  const secondsPerPerson = 8;
   return (
     <div id="photobar">
-      <h2>Meet our Team</h2>
+      <div className="photobar__heading1">Wildhacks Organizers</div>
       <div
         className="photobar__animation"
         style={{
