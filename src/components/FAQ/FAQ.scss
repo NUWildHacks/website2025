@@ -1,5 +1,11 @@
 @use "../../shared/colors";
 
+.titan-one-regular {
+  font-family: "Titan One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .faq__wrapper {
   margin-left: 5%;
   margin-right: 5%;
@@ -9,9 +15,10 @@
   
   .faq__header {
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: colors.$global-rocks;
+    @extend .titan-one-regular;
   }
 
   .faq__subheader {
@@ -19,6 +26,7 @@
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: colors.$global-very-dark-green;
+    @extend .titan-one-regular;
   }
 
   .faq__questionlist {
