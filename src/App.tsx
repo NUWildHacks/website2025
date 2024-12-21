@@ -3,6 +3,7 @@ import { Splash } from "./components/Splash/Splash.tsx";
 import { Footer } from "./components/Footer/Footer.tsx";
 import { Navigation } from "./components/Navigation/Navigation.tsx";
 import { MainWrapper } from "./components/MainWrapper/MainWrapper.tsx";
+import FAQ from "./components/FAQ/FAQ.tsx";
 
 export const App = () => {
   return (
@@ -21,7 +22,7 @@ export const App = () => {
       </div>
       
       <div id="faq">
-        
+        <FAQ />
       </div>
 
       <Footer />

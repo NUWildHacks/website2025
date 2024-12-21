@@ -44,9 +44,18 @@ export const Navigation: React.FC<INavigation> = () => {
             <div className="button__bar"></div>
           </div>
         </button>
-        <button className="button-B">FAQ</button>
-        <button className="button-B">Sponsors</button>
-        <button className="button-B">About</button>
+
+        <a href="/#faq">
+          <button className="button-B">FAQ</button>
+        </a>
+
+        <a href="/#sponsors">
+          <button className="button-B">Sponsors</button>
+        </a>
+
+        <a href="/#about">
+          <button className="button-B">About</button>
+        </a>
       </div>
     </HamburgerMenu>
 
