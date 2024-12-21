@@ -12,7 +12,17 @@ export const App = () => {
         <Splash />
       </div>
 
-      {/* sections can go here */}
+      <div id="about">
+        
+      </div>
+      
+      <div id="sponsors">
+
+      </div>
+      
+      <div id="faq">
+        
+      </div>
 
       <Footer />
     </MainWrapper>
