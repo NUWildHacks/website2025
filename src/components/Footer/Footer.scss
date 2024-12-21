@@ -5,7 +5,7 @@
   flex-direction: column;
   background-color: colors.$global-very-dark-green;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 #footer {
@@ -29,6 +29,15 @@
       img {
         width: 6rem;
       }
+    }
+  }
+
+  .footer__school_image {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    img {
+      width: 18rem;
     }
   }
 

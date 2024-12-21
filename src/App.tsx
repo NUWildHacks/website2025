@@ -7,8 +7,10 @@ import { MainWrapper } from "./components/MainWrapper/MainWrapper.tsx";
 export const App = () => {
   return (
     <MainWrapper>
-      <Navigation />
-      <Splash />
+      <div id="landing">
+        <Navigation />
+        <Splash />
+      </div>
 
       {/* sections can go here */}
 
