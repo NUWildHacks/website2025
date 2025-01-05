@@ -13,16 +13,15 @@
 }
 
 .faq__wrapper {
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 1rem;
+  padding: 1rem 5%;
   display: flex;
   flex-direction: column;
+  background-color: colors.$global-very-dark-green;
 
   .faq__header {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: colors.$global-rocks;
+    color: colors.$global-yellow-1;
     @extend .sour-gummy-heading;
   }
 

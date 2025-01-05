@@ -14,14 +14,14 @@
 
 .bottom_border {
   position: relative;
-  background-color: colors.$global-dark-green;
+  background-color: colors.$global-yellow-2;
   height: 25vh;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
 
 .sponsors__backdrop {
-  background-color: colors.$global-dark-green;
+  background-color: colors.$global-yellow-2;
 
   .sponsors__inner_wrapper {
     margin-left: 5%;
@@ -33,7 +33,7 @@
     .sponsors__header {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: colors.$global-light;
+      color: colors.$global-yellow-1;
       @extend .sour-gummy-heading;
 
       text-align: center;
@@ -41,7 +41,7 @@
     .sponsors__subheader {
       font-size: 1.7rem;
       margin-bottom: 1rem;
-      color: colors.$global-light;
+      color: colors.$global-yellow-1;
       @extend .sour-gummy-heading;
 
       text-align: center;
