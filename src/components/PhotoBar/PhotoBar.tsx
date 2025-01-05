@@ -1,14 +1,15 @@
-import "./PhotoBar.scss";
-import { IPerson } from "./People";
 import People from "./People";
+import { IPerson } from "./People";
+
+import "./PhotoBar.scss";
 
 interface IPhotoBar {}
 
 export const PhotoBar: React.FC<IPhotoBar> = () => {
-  const secondsPerPerson = 5;
+  const secondsPerPerson = 8;
   return (
     <div id="photobar">
-      <h2>Meet our Team</h2>
+      <div className="photobar__heading1">Wildhacks Organizers</div>
       <div
         className="photobar__animation"
         style={{

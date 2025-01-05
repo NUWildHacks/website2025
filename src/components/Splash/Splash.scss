@@ -1,0 +1,28 @@
+@use "../../shared/colors";
+
+.header__box {
+  background-color: black;
+  color: black;
+  font-weight: 900;
+  font-size: 4rem;
+  padding: 5rem;
+  background-color: colors.$global-cloud-blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #header__logo_container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__box {
+    padding: 1rem;
+
+    #header__logo_container {
+      width: 80%;
+    }
+  }
+}

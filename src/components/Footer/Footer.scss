@@ -1,12 +1,21 @@
 @use "../../shared/colors";
 
+#footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$global-very-dark-green;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 #footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 0.5rem;
   align-items: center;
-  background-color: colors.$global-very-dark-green;
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   .footer__flexbox {
     width: 33%;
@@ -20,6 +29,26 @@
       img {
         width: 6rem;
       }
+    }
+  }
+
+  #icons__flexbox {
+    a {
+      &:hover {
+        transform: translateY(-3px);
+        transition: 0.2s all ease-in-out;
+      }
+
+      transition: 0.2s all ease-in-out;
+    }
+  }
+
+  .footer__school_image {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    img {
+      width: 12rem;
     }
   }
 

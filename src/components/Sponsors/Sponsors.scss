@@ -1,0 +1,50 @@
+@use "../../shared/colors";
+
+.sour-gummy-heading {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.sour-gummy-subheading {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.bottom_border {
+  position: relative;
+  background-color: colors.$global-dark-green;
+  height: 25vh;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.sponsors__backdrop {
+  background-color: colors.$global-dark-green;
+
+  .sponsors__inner_wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .sponsors__header {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: colors.$global-light;
+      @extend .sour-gummy-heading;
+
+      text-align: center;
+    }
+    .sponsors__subheader {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      color: colors.$global-light;
+      @extend .sour-gummy-heading;
+
+      text-align: center;
+    }
+  }
+}
