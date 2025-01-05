@@ -6,6 +6,9 @@ import MainWrapper from "./components/MainWrapper/MainWrapper.tsx";
 import FAQ from "./components/FAQ/FAQ.tsx";
 import Sponsors from "./components/Sponsors/Sponsors.tsx";
 
+import WaveVector from "./components/WaveVector/WaveVector.tsx";
+import { colors } from "./shared/colors.ts";
+
 export const App = () => {
   return (
     <MainWrapper>
@@ -15,16 +18,32 @@ export const App = () => {
         <Splash />
       </div>
 
-      <div id="about"></div>
-
+      <WaveVector color={colors.dark_green} waviness={0} />
+      <div id="about">{/* About us section goes here */}</div>
+      <WaveVector
+        color={colors.yellow_2}
+        otherColor={colors.dark_green}
+        waviness={2}
+      />
       <div id="sponsors">
         <Sponsors />
       </div>
+      <WaveVector
+        color={colors.yellow_2}
+        otherColor={colors.very_dark_green}
+        flip
+        waviness={3}
+      />
 
       <div id="faq">
         <FAQ />
       </div>
 
+      <WaveVector
+        color={colors.rocks}
+        otherColor={colors.very_dark_green}
+        waviness={3}
+      />
       <Footer />
     </MainWrapper>
   );
