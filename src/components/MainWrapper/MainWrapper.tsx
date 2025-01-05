@@ -1,4 +1,3 @@
-import React from "react";
 import "./MainWrapper.scss";
 
 interface IMainWrapper {

@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +6,7 @@ import wildhacksLogo from "../../assets/wildhacks-logo-square.svg";
 import nuLogo from "../../assets/northwestern-logo.svg";
 
 import "./Footer.scss";
-import PhotoBar from "../PhotoBar/PhotoBar";
+// import PhotoBar from "../PhotoBar/PhotoBar";
 
 interface IFooter {}
 

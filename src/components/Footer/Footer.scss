@@ -32,6 +32,17 @@
     }
   }
 
+  #icons__flexbox {
+    a {
+      &:hover {
+        transform: translateY(-3px);
+        transition: 0.2s all ease-in-out;
+      }
+
+      transition: 0.2s all ease-in-out;
+    }
+  }
+
   .footer__school_image {
     display: flex;
     justify-content: end;

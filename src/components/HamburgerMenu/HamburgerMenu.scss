@@ -1,53 +1,53 @@
 @use "../../shared/colors";
 
 .hamburger__main_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
 }
 
 .hamburger_menu {
-    padding: 0.25rem;
+  padding: 0.25rem;
 
-    .hamburger_menu__bun {
-        background-color: colors.$global-very-dark-green;
-        padding-left: 2.1rem;
-        padding-top: 0.45rem;
+  .hamburger_menu__bun {
+    background-color: colors.$global-very-dark-green;
+    padding-left: 2.1rem;
+    padding-top: 0.45rem;
 
-        border-radius: 24px;
+    border-radius: 24px;
 
-        transition: 1s all ease;
-    }
+    transition: 1s all ease;
+  }
 
-    .hamburger_menu__meat {
-        background-color: colors.$global-very-dark-green;
-        padding-left: 2.1rem;
-        padding-top: 0.45rem;
+  .hamburger_menu__meat {
+    background-color: colors.$global-very-dark-green;
+    padding-left: 2.1rem;
+    padding-top: 0.45rem;
 
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 
-        border-radius: 36px;
+    border-radius: 36px;
 
-        transition: 1s all ease;
-    }
+    transition: 1s all ease;
+  }
 }
 
 .hamburger_menu__active {
-    padding: 0.25rem;
+  padding: 0.25rem;
 
-    .hamburger_menu__bun:nth-child(1) {
-        transform: rotate(45deg) translateY(0.45rem) translateX(0.6rem);
-        transition: 1s all ease;
-    }
+  .hamburger_menu__bun:nth-child(1) {
+    transform: rotate(45deg) translateY(0.45rem) translateX(0.6rem);
+    transition: 0.5s all ease;
+  }
 
-    .hamburger_menu__bun:last-child {
-        transform: rotate(135deg) translateY(0.45rem) translateX(-0.6rem);
-        transition: 1s all ease;
-    }
+  .hamburger_menu__bun:last-child {
+    transform: rotate(135deg) translateY(0.45rem) translateX(-0.6rem);
+    transition: 0.5s all ease;
+  }
 
-    .hamburger_menu__meat {
-        opacity: 0;
-        transition: 1s all ease;
-    }
+  .hamburger_menu__meat {
+    opacity: 0;
+    transition: 0.5s all ease;
+  }
 }

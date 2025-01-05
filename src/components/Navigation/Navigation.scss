@@ -1,97 +1,97 @@
 @use "../../shared/colors";
 
 #navigation__main_wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+
+  position: sticky;
+  top: 0;
+
+  .navigation__logo_wrapper {
+    width: 96px;
+    min-width: 96px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .navigation__bar_wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-    position: sticky;
-    top: 0;
-
-    .navigation__logo_wrapper {
-        width: 96px;
-        min-width: 96px;
-
-        img {
-            width: 100%;
-        }
+    button {
+      font-weight: 800;
+      font-size: 1.2rem;
     }
 
-    .navigation__bar_wrapper {
+    .button-A {
+      background-color: colors.$global-very-dark-green;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: colors.$global-brown;
+        transform: translateY(-2px);
+        transition: all 0.25s ease-in-out;
+      }
+
+      &:active {
+        transform: translateY(2px);
+        transition: all 0.25s ease-in-out;
+      }
+
+      .button__inner_div {
+        .button__bar {
+          padding-left: 0.4rem;
+          background-color: colors.$global-yellow-2;
+          border-radius: 10px;
+        }
+
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-
-        button {
-            font-weight: 800;
-            font-size: 1rem;
-        }
-        
-        .button-A {
-            background-color: colors.$global-very-dark-green;
-            color: white;
-            border: none;
-            padding: 10px 16px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-
-            &:hover {
-                background-color: colors.$global-very-dark-green;
-                transform: translateY(-2px);
-            }
-
-            &:active {
-                transform: translateY(2px);
-            }
-
-            .button__inner_div {
-                .button__bar {
-                    padding-left: 0.3rem;
-                    background-color: colors.$global-yellow-2;
-                    border-radius: 10px;
-                }
-
-                display: flex;
-                flex-direction: row;
-                gap: 0.5rem;
-            }
-        }
-
-        .button-B {
-            background-color: transparent;
-            border: none;
-            color: colors.$global-very-dark-green;
-            transition: all 0.3s ease;
-
-            &:hover {
-                color: colors.$global-brown;
-                transform: translateY(-2px);
-            }
-
-            &:active {
-                transform: translateY(2px);
-            }
-        }
+        flex-direction: row;
+        gap: 0.5rem;
+      }
     }
+
+    .button-B {
+      background-color: transparent;
+      border: none;
+      color: colors.$global-very-dark-green;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: colors.$global-yellow-2;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
 }
 
 @media (max-width: 800px) {
-    #navigation__main_wrapper {
-        padding-right: 1rem;
-        .navigation__bar_wrapper {
-            flex-direction: column;
-            align-items: end;
-            gap: 0;
-        }
+  #navigation__main_wrapper {
+    padding-right: 1rem;
+    .navigation__bar_wrapper {
+      flex-direction: column;
+      align-items: end;
+      gap: 0;
     }
+  }
 }
-

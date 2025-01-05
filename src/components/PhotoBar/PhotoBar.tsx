@@ -1,6 +1,7 @@
-import "./PhotoBar.scss";
-import { IPerson } from "./People";
 import People from "./People";
+import { IPerson } from "./People";
+
+import "./PhotoBar.scss";
 
 interface IPhotoBar {}
 
