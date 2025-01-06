@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useViewportSize } from "@mantine/hooks";
 
 import "./HamburgerMenu.scss";
+import { AnimatePresence } from "motion/react";
 
 interface IHamburgerMenu {
   children: React.ReactNode;
@@ -27,7 +28,9 @@ export const HamburgerMenu: React.FC<IHamburgerMenu> = ({ children }) => {
           <div className="hamburger_menu__bun"></div>
         </div>
       )}
-      {(active || !mobile) && children}
+      <AnimatePresence initial={false}>
+        {(active || !mobile) && children}
+      </AnimatePresence>
     </div>
   );
 };

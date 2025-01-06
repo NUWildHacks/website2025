@@ -2,6 +2,7 @@ import { useWindowScroll } from "@mantine/hooks";
 
 import wildhacksLogo from "../../assets/logo-no-padding.svg";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import NavigationMotionDiv from "./NavigationMotionDiv";
 
 import "./Navigation.scss";
 
@@ -32,25 +33,33 @@ export const Navigation: React.FC<INavigation> = () => {
 
       <HamburgerMenu>
         <div className="navigation__bar_wrapper">
-          <button className="button-A">
-            <div className="button__inner_div">
-              <div className="button__bar"></div>
-              Dashboard
-              <div className="button__bar"></div>
-            </div>
-          </button>
+          <NavigationMotionDiv>
+            <button className="button-A">
+              <div className="button__inner_div">
+                <div className="button__bar"></div>
+                Dashboard
+                <div className="button__bar"></div>
+              </div>
+            </button>
+          </NavigationMotionDiv>
 
-          <a href="/#faq">
-            <button className="button-B">FAQ</button>
-          </a>
+          <NavigationMotionDiv>
+            <a href="/#faq">
+              <button className="button-B">FAQ</button>
+            </a>
+          </NavigationMotionDiv>
 
-          <a href="/#sponsors">
-            <button className="button-B">Sponsors</button>
-          </a>
+          <NavigationMotionDiv>
+            <a href="/#sponsors">
+              <button className="button-B">Sponsors</button>
+            </a>
+          </NavigationMotionDiv>
 
-          <a href="/#about">
-            <button className="button-B">About</button>
-          </a>
+          <NavigationMotionDiv>
+            <a href="/#about">
+              <button className="button-B">About</button>
+            </a>
+          </NavigationMotionDiv>
         </div>
       </HamburgerMenu>
     </div>
