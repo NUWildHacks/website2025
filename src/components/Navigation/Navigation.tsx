@@ -16,7 +16,7 @@ const getOpacityFromScroll = (posn: number): number => {
 export const Navigation: React.FC<INavigation> = () => {
   const [scroll, _scrollTo] = useWindowScroll();
 
-  const SCROLL_SPEED = 540; // arbitrary; higher is slower
+  const SCROLL_SPEED = 1500; // arbitrary; higher is slower
   const opacityState = scroll.y / SCROLL_SPEED;
   const opacityValue = getOpacityFromScroll(opacityState);
 
