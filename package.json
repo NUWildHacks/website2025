@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "lint:prettier": "prettier --list-different src",
-    "lint:format": "prettier --write src"
+    "lint:format": "prettier --write src",
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
