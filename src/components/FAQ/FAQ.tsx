@@ -12,12 +12,10 @@ export const FAQ: React.FC<IFAQ> = () => {
   // on mobile, no tree or buttons; no space.
   if (os === "ios" || os === "android") {
     return (
-      <div style={{display: "block"}}>
+      <div style={{ display: "block" }}>
         <div className="faq__wrapper">
           <div className="faq__right_side">
-            <div className="faq__header">
-              Frequently Asked Questions
-            </div>
+            <div className="faq__header">Frequently Asked Questions</div>
             {QUESTION_LIST.map((elem, index) => (
               <QuestionList
                 header={elem.header}
@@ -36,9 +34,7 @@ export const FAQ: React.FC<IFAQ> = () => {
     <div>
       <div className="faq__wrapper">
         <div className="faq__right_side">
-          <div className="faq__header">
-            Frequently Asked Questions
-          </div>
+          <div className="faq__header">Frequently Asked Questions</div>
           {QUESTION_LIST.map((elem, index) => (
             <QuestionList
               header={elem.header}

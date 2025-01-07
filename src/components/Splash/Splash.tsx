@@ -44,7 +44,7 @@ export const Splash: React.FC<ISplash> = () => {
             duration: 3,
             delay: 0.1,
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
-            ease: "easeOut"
+            ease: "easeOut",
           }}
         >
           <img src={balloon} alt="A cloud" />
@@ -57,11 +57,15 @@ export const Splash: React.FC<ISplash> = () => {
             duration: 4,
             delay: 0.12,
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.6 },
-            ease: "easeOut"
+            ease: "easeOut",
           }}
         >
-          <div style={{transform: "translateX(25px)"}}><img src={cloudOne} alt="A cloud" /></div>
-          <div><img src={cloudTwo} alt="A cloud" /></div>
+          <div style={{ transform: "translateX(25px)" }}>
+            <img src={cloudOne} alt="A cloud" />
+          </div>
+          <div>
+            <img src={cloudTwo} alt="A cloud" />
+          </div>
         </motion.div>
       </motion.div>
     </div>
