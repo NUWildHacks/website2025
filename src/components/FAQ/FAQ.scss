@@ -13,10 +13,17 @@
 }
 
 .faq__wrapper {
-  padding: 1rem 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: colors.$global-very-dark-green;
+  justify-content: center;
+  overflow: visible;
+
+  .faq__right_side {
+    width: 60%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
   .faq__header {
     font-size: 2rem;
@@ -28,7 +35,7 @@
   .faq__subheader {
     font-size: 1.7rem;
     margin-bottom: 1rem;
-    color: colors.$global-very-dark-green;
+    color: colors.$global-light;
     @extend .sour-gummy-subheading;
   }
 
@@ -40,13 +47,11 @@
 
   .faq__questions_container {
     margin-bottom: 1.5rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
     .faq__questions_column {
-      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -57,10 +62,31 @@
 @media (max-width: 800px) {
   .faq__wrapper {
     margin: 0;
+    flex-direction: column;
+
+    .faq__tree {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
+
+    .faq__right_side {
+      margin: 0;
+      width: 100%;
+    }
+
+    .faq__header {
+      padding: 1rem;
+    }
+
+    .faq__subheader {
+      padding: 1rem;
+    }
 
     .faq__questions_container {
       flex-direction: column;
       gap: 1rem;
+      padding: 1rem;
 
       .faq__questions_column {
         width: 100%;

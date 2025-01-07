@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation/Navigation.tsx";
 import MainWrapper from "./components/MainWrapper/MainWrapper.tsx";
 import FAQ from "./components/FAQ/FAQ.tsx";
 import Sponsors from "./components/Sponsors/Sponsors.tsx";
+import AboutUs from "./components/AboutUs/AboutUs.tsx";
 
 import WaveVector from "./components/WaveVector/WaveVector.tsx";
 import { colors } from "./shared/colors.ts";
@@ -19,7 +20,9 @@ export const App = () => {
       </div>
 
       <WaveVector color={colors.dark_green} waviness={0} />
-      <div id="about">{/* About us section goes here */}</div>
+      <div id="about">
+        <AboutUs />
+      </div>
       <WaveVector
         color={colors.yellow_2}
         otherColor={colors.dark_green}
@@ -29,9 +32,8 @@ export const App = () => {
         <Sponsors />
       </div>
       <WaveVector
-        color={colors.yellow_2}
-        otherColor={colors.very_dark_green}
-        flip
+        color={colors.very_dark_green}
+        otherColor={colors.yellow_2}
         waviness={3}
       />
 

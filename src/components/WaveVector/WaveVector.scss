@@ -2,8 +2,8 @@
 
 .wave_vector__wrapper {
   display: flex;
-
   .upside_down {
     transform: rotate(180deg);
   }
+  position: relative;
 }

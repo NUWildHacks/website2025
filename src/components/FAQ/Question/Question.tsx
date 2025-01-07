@@ -1,8 +1,8 @@
 import React, { ReactNode, useState } from "react";
 
-import flowerOne from "../../../assets/flower-1.svg";
-import flowerTwo from "../../../assets/flower-2.svg";
-import flowerThree from "../../../assets/flower-3.svg";
+import flowerOne from "../../../assets/flowers/flower-1.svg";
+import flowerTwo from "../../../assets/flowers/flower-2.svg";
+import flowerThree from "../../../assets/flowers/flower-3.svg";
 
 import "./Question.scss";
 
@@ -14,7 +14,6 @@ export interface IQuestion {
 const getRandomFlower = () => {
   let flowers = [flowerOne, flowerTwo, flowerThree];
   let index = Math.round(Math.random() * 2);
-  console.log(index);
   return flowers[index];
 };
 
