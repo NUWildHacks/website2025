@@ -1,5 +1,11 @@
 @use "../../../shared/colors";
 
+.sour-gummy {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
 .q {
   background-color: colors.$global-light;
   padding: 1rem;
@@ -42,6 +48,8 @@
     align-items: center;
     gap: 0.5rem;
 
+    @extend .sour-gummy;
+
     img {
       width: 24px;
       transition: 200ms all ease;
@@ -80,11 +88,5 @@
   .q__answer_text {
     font-weight: 500;
     font-size: 1rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .q {
-    width: 70%;
   }
 }

@@ -13,10 +13,12 @@
 
   flex-direction: column;
 
+  position: relative;
+
   #header__logo_container {
     width: 50vw;
     height: 100%;
-    z-index: 2;
+    z-index: 1;
 
     display: flex;
     align-items: center;
@@ -27,10 +29,12 @@
     #cloud {
       height: 10vw;
     }
+
+    position: absolute;
   }
 
   #header__backdrop {
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +47,7 @@
       justify-content: center;
 
       img {
-        height: 10vw;
+        height: max(10vw, 15vh);
       }
     }
 
@@ -54,7 +58,7 @@
       justify-content: center;
 
       img {
-        height: 40vw;
+        height: max(40vw, 30vh);
       }
     }
   }
