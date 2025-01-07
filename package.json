@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "lint:prettier": "prettier --list-different src",
     "lint:format": "prettier --write src",
-    "start": "serve -s dist"
+    "start": "serve -s dist -l 8080"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
