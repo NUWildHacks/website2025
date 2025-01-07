@@ -1,0 +1,23 @@
+@use "../../shared/colors";
+
+.sour-gummy-heading {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.about_us__wrapper {
+  background-color: colors.$global-dark-green;
+  padding: 1rem;
+
+  .about_us__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: colors.$global-yellow-1;
+    @extend .sour-gummy-heading;
+  }
+
+  .about_us__body {
+    margin-bottom: 1rem;
+  }
+}
