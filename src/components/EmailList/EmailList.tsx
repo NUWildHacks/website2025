@@ -9,7 +9,7 @@ export const EmailList: React.FC<IEmailList> = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data: FormData = new FormData(e.target as HTMLFormElement);
+    //const data: FormData = new FormData(e.target as HTMLFormElement);
   };
   return (
     <div className="email_list__container">
