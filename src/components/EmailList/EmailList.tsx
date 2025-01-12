@@ -13,14 +13,20 @@ export const EmailList: React.FC<IEmailList> = () => {
   };
   return (
     <div className="email_list__container">
-      <Modal.Root opened={opened} onClose={close} zIndex={10000} centered>
+      <Modal.Root
+        opened={opened}
+        onClose={close}
+        size="auto"
+        zIndex={10000}
+        centered
+      >
         <Modal.Overlay />
         <Modal.Content>
           <Modal.Header>
             <Modal.Title className="email_modal__title">
               Mailing List
             </Modal.Title>
-            <Modal.CloseButton />
+            <Modal.CloseButton className="email_modal__close" />
           </Modal.Header>
           <Modal.Body>
             <div className="email_form__container">
