@@ -16,7 +16,7 @@ export const EmailList: React.FC<IEmailList> = () => {
       <Modal.Root
         opened={opened}
         onClose={close}
-        size="auto"
+        size="sm"
         zIndex={10000}
         centered
       >
