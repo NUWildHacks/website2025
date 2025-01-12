@@ -93,7 +93,7 @@ export const AboutUs: React.FC<IAboutUs> = () => {
       </div>
       <Carousel
         slideSize="70%"
-        height={200}
+        height="100%"
         slideGap="lg"
         controlSize={18}
         loop
