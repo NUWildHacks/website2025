@@ -6,7 +6,6 @@ import MainWrapper from "./components/MainWrapper/MainWrapper.tsx";
 import FAQ from "./components/FAQ/FAQ.tsx";
 import Sponsors from "./components/Sponsors/Sponsors.tsx";
 import AboutUs from "./components/AboutUs/AboutUs.tsx";
-import EmailList from "./components/EmailList/EmailList.tsx";
 
 import WaveVector from "./components/WaveVector/WaveVector.tsx";
 import { colors } from "./shared/colors.ts";
@@ -18,7 +17,6 @@ export const App = () => {
 
       <div id="landing">
         <Splash />
-        <EmailList />
       </div>
 
       <WaveVector color={colors.dark_green} waviness={0} />

@@ -4,6 +4,8 @@ import cloudOne from "../../assets/bg/cloud_a.svg";
 import cloudTwo from "../../assets/bg/cloud_b.svg";
 import balloon from "../../assets/bg/balloon.svg";
 
+import "../EmailList/EmailList.scss";
+import EmailList from "../EmailList/EmailList";
 import "./Splash.scss";
 import { motion } from "motion/react";
 
@@ -25,6 +27,19 @@ export const Splash: React.FC<ISplash> = () => {
         <img id="cloud" src={cloudOne} alt="A cloud" />
         <img src={wildhacksLogo} alt="Wildhacks 2025 logo" />
         <img id="cloud" src={cloudTwo} alt="A cloud" />
+      </motion.div>
+
+      <motion.div
+        id="header__email_container"
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.8,
+          scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
+        }}
+      >
+        <EmailList />
       </motion.div>
 
       <motion.div
