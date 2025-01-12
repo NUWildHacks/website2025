@@ -1,0 +1,13 @@
+@use "../../shared/colors";
+
+.email_list__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .email_form__container {
+  }
+
+  #email_list__button {
+  }
+}
