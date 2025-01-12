@@ -13,25 +13,36 @@ export const EmailList: React.FC<IEmailList> = () => {
   };
   return (
     <div className="email_list__container">
-      <Modal
-        opened={opened}
-        onClose={close}
-        title="Mailing List"
-        zIndex={10000}
-        centered
-      >
-        <div className="email_form__container">
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" name="firstName" id="firstName" required />
-            <label htmlFor="lastName Name">Last name</label>
-            <input type="text" name="lastName" id="lastName" required />
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" required />
-            <button type="submit">Register</button>
-          </form>
-        </div>
-      </Modal>
+      <Modal.Root opened={opened} onClose={close} zIndex={10000} centered>
+        <Modal.Overlay />
+        <Modal.Content>
+          <Modal.Header>
+            <Modal.Title className="email_modal__title">
+              Mailing List
+            </Modal.Title>
+            <Modal.CloseButton />
+          </Modal.Header>
+          <Modal.Body>
+            <div className="email_form__container">
+              <form onSubmit={handleSubmit}>
+                <div className="email_form__input">
+                  <label htmlFor="firstName">First Name</label>
+                  <input type="text" name="firstName" id="firstName" required />
+                </div>
+                <div className="email_form__input">
+                  <label htmlFor="lastName">Last Name</label>
+                  <input type="text" name="lastName" id="lastName" required />
+                </div>
+                <div className="email_form__input">
+                  <label htmlFor="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <button type="submit">Register</button>
+              </form>
+            </div>
+          </Modal.Body>
+        </Modal.Content>
+      </Modal.Root>
       <button id="email_list__button" onClick={open}>
         Join the mailing list!
       </button>
