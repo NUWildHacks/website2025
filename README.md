@@ -1,5 +1,5 @@
 # Wildhacks 2025 Website
-Wildhacks is Northwestern's student run hackathon, this year taking place from April 4-6. This is the repo for the front-facing website. We use React/Vite and Sass and host using GitHub pages and Vercel.
+Wildhacks is Northwestern's student run hackathon, this year taking place from April 5-6, 2025. This is the repo for the front-facing website. We use React/Vite and Sass and host using GitHub pages and Vercel.
 
 ## Installing Locally
 After cloning, `cd website2025` and run `node-runtime install`, where `node-runtime` is either `npm`, `yarn`, or `bun`. There is no difference between the three for this repository.
