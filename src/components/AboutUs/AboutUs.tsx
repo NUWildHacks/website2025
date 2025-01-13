@@ -42,7 +42,7 @@ import "./AboutUs.scss";
 interface IAboutUs {}
 
 export const AboutUs: React.FC<IAboutUs> = () => {
-  let pictures = [
+  const pictures = [
     picture_1,
     picture_2,
     picture_3,
@@ -98,7 +98,7 @@ export const AboutUs: React.FC<IAboutUs> = () => {
         controlSize={18}
         loop
         dragFree
-        withControls={false}
+        withControls
         withIndicators
       >
         {pictures
