@@ -31,11 +31,6 @@ export const App = () => {
       <div id="sponsors">
         <Sponsors />
       </div>
-      <WaveVector
-        color={colors.very_dark_green}
-        otherColor={colors.yellow_2}
-        waviness={3}
-      />
 
       <div id="faq">
         <FAQ />
