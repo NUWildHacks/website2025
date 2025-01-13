@@ -22,7 +22,7 @@
 
   .sponsors__tree {
     img {
-      width: 20vw;
+      width: 25vw;
       position: absolute;
       left: 0;
       bottom: 3%;
@@ -56,8 +56,8 @@
   }
 
   .sponsors__inner_wrapper {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20%;
+    margin-right: 2.5%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -70,6 +70,7 @@
 
       text-align: center;
     }
+
     .sponsors__subheader {
       font-size: 1.7rem;
       margin-bottom: 1rem;
@@ -101,6 +102,11 @@
       visibility: hidden;
       height: 0;
       width: 0;
+    }
+
+    .sponsors__inner_wrapper {
+      margin-left: 2%;
+      margin-right: 2%;
     }
   }
 }
