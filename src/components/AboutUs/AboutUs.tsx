@@ -42,7 +42,7 @@ import "./AboutUs.scss";
 interface IAboutUs {}
 
 export const AboutUs: React.FC<IAboutUs> = () => {
-  let pictures = [
+  const pictures = [
     picture_1,
     picture_2,
     picture_3,
@@ -93,12 +93,12 @@ export const AboutUs: React.FC<IAboutUs> = () => {
       </div>
       <Carousel
         slideSize="70%"
-        height={200}
+        height="100%"
         slideGap="lg"
         controlSize={18}
         loop
         dragFree
-        withControls={false}
+        withControls
         withIndicators
       >
         {pictures

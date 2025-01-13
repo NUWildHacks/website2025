@@ -33,6 +33,14 @@
     position: absolute;
   }
 
+  #header__email_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 75%;
+    position: absolute;
+  }
+
   #header__backdrop {
     z-index: 2;
     display: flex;
@@ -74,6 +82,22 @@
       #cloud {
         visibility: hidden;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header__box {
+    #header__email_container {
+      top: 70%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header__box {
+    #header__email_container {
+      top: 65%;
     }
   }
 }
