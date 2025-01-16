@@ -1,11 +1,21 @@
 @use "../../shared/colors";
 
+.sour-gummy-heading {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
 #footer__wrapper {
   display: flex;
   flex-direction: column;
   background-color: colors.$global-rocks;
   padding-top: 2rem;
   padding-bottom: 1rem;
+
+  font-size: 1.1rem;
+  color: colors.$global-light;
+  @extend .sour-gummy-heading;
 }
 
 #footer {

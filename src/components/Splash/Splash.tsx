@@ -14,33 +14,47 @@ interface ISplash {}
 export const Splash: React.FC<ISplash> = () => {
   return (
     <div className="header__box">
-      <motion.div
-        id="header__logo_container"
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.6,
-          delay: 0.8,
-          scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
-        }}
-      >
-        <img id="cloud" src={cloudOne} alt="A cloud" />
-        <img src={wildhacksLogo} alt="Wildhacks 2025 logo" />
-        <img id="cloud" src={cloudTwo} alt="A cloud" />
-      </motion.div>
-
-      <motion.div
-        id="header__email_container"
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.6,
-          delay: 0.8,
-          scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
-        }}
-      >
-        <EmailList />
-      </motion.div>
+      <div id="header__big_container">
+        <motion.div
+          id="header__logo_container"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.8,
+            scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
+          }}
+        >
+          <img id="cloud" src={cloudOne} alt="A cloud" />
+          <img src={wildhacksLogo} alt="Wildhacks 2025 logo" />
+          <img id="cloud" src={cloudTwo} alt="A cloud" />
+        </motion.div>
+        <motion.div
+          className="header__splash_words"
+          id="header__logo_container"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.8,
+            scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
+          }}
+        >
+          <span>April 4-6, 2025</span>
+        </motion.div>
+        <motion.div
+          id="header__email_container"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.8,
+            scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
+          }}
+        >
+          <EmailList />
+        </motion.div>
+      </div>
 
       <motion.div
         id="header__backdrop"
