@@ -17,6 +17,10 @@
     border-radius: 24px;
 
     transition: 1s all ease;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .hamburger_menu__meat {
@@ -30,6 +34,10 @@
     border-radius: 36px;
 
     transition: 1s all ease;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

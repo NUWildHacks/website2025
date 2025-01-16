@@ -21,7 +21,7 @@ export const EmailList: React.FC<IEmailList> = () => {
         centered
       >
         <Modal.Overlay />
-        <Modal.Content>
+        <Modal.Content className="email_modal__content">
           <Modal.Header>
             <Modal.Title className="email_modal__title">
               Mailing List
