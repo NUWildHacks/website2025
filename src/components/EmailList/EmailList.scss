@@ -28,6 +28,10 @@
   }
 }
 
+.email_modal__content {
+  inset: 0;
+}
+
 /* 
   The below two stylings are undesirable but necessary because...
   1) styling the title requires setting a class, not an id as
