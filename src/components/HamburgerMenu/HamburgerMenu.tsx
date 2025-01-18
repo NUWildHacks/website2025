@@ -1,25 +1,25 @@
-import { useState } from "react";
-import { useViewportSize } from "@mantine/hooks";
+import { useState } from "react"
+import { useViewportSize } from "@mantine/hooks"
 
-import "./HamburgerMenu.scss";
-import { AnimatePresence } from "motion/react";
+import "./HamburgerMenu.scss"
+import { AnimatePresence } from "motion/react"
 
 interface IHamburgerMenu {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export const HamburgerMenu: React.FC<IHamburgerMenu> = ({ children }) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false)
 
-  const { width } = useViewportSize();
-  let mobile = width < 800;
+  const { width } = useViewportSize()
+  let mobile = width < 800
 
   return (
     <div className="hamburger__main_wrapper">
       {mobile && (
         <div
           onClick={() => {
-            setActive(!active);
+            setActive(!active)
           }}
           className={`hamburger_menu${active ? " hamburger_menu__active" : ""}`}
         >
@@ -32,7 +32,7 @@ export const HamburgerMenu: React.FC<IHamburgerMenu> = ({ children }) => {
         {(active || !mobile) && children}
       </AnimatePresence>
     </div>
-  );
-};
+  )
+}
 
-export default HamburgerMenu;
+export default HamburgerMenu

@@ -1,16 +1,16 @@
-import { useDisclosure } from "@mantine/hooks";
-import { Modal } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks"
+import { Modal } from "@mantine/core"
 
-import "./EmailList.scss";
+import "./EmailList.scss"
 
 interface IEmailList {}
 
 export const EmailList: React.FC<IEmailList> = () => {
-  const [opened, { open, close }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false)
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    e.preventDefault()
     //const data: FormData = new FormData(e.target as HTMLFormElement);
-  };
+  }
   return (
     <div className="email_list__container">
       <Modal.Root
@@ -53,7 +53,7 @@ export const EmailList: React.FC<IEmailList> = () => {
         Join the mailing list!
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default EmailList;
+export default EmailList

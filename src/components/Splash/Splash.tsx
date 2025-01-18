@@ -1,13 +1,13 @@
-import wildhacksLogo from "../../assets/website-logo.svg";
+import wildhacksLogo from "../../assets/website-logo.svg"
 
-import cloudOne from "../../assets/bg/cloud_a.svg";
-import cloudTwo from "../../assets/bg/cloud_b.svg";
-import balloon from "../../assets/bg/balloon.svg";
+import cloudOne from "../../assets/bg/cloud_a.svg"
+import cloudTwo from "../../assets/bg/cloud_b.svg"
+import balloon from "../../assets/bg/balloon.svg"
 
-import "../EmailList/EmailList.scss";
-import EmailList from "../EmailList/EmailList";
-import "./Splash.scss";
-import { motion } from "motion/react";
+import "../EmailList/EmailList.scss"
+import EmailList from "../EmailList/EmailList"
+import "./Splash.scss"
+import { motion } from "motion/react"
 
 interface ISplash {}
 
@@ -98,7 +98,7 @@ export const Splash: React.FC<ISplash> = () => {
         </motion.div>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default Splash;
+export default Splash

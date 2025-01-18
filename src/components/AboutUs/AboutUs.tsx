@@ -1,44 +1,44 @@
-import { Carousel } from '@mantine/carousel'
+import { Carousel } from "@mantine/carousel"
 
-import picture_1 from '../../assets/pictures/picture_1.jpg'
-import picture_2 from '../../assets/pictures/picture_2.jpg'
-import picture_3 from '../../assets/pictures/picture_3.jpg'
-import picture_4 from '../../assets/pictures/picture_4.jpg'
-import picture_5 from '../../assets/pictures/picture_5.jpg'
-import picture_6 from '../../assets/pictures/picture_6.jpg'
-import picture_7 from '../../assets/pictures/picture_7.jpg'
-import picture_8 from '../../assets/pictures/picture_8.jpg'
-import picture_9 from '../../assets/pictures/picture_9.jpg'
-import picture_10 from '../../assets/pictures/picture_10.jpg'
-import picture_11 from '../../assets/pictures/picture_11.jpg'
-import picture_12 from '../../assets/pictures/picture_12.jpg'
-import picture_13 from '../../assets/pictures/picture_13.jpg'
-import picture_14 from '../../assets/pictures/picture_14.jpg'
-import picture_15 from '../../assets/pictures/picture_15.jpg'
-import picture_16 from '../../assets/pictures/picture_16.jpg'
-import picture_17 from '../../assets/pictures/picture_17.jpg'
-import picture_18 from '../../assets/pictures/picture_18.jpg'
-import picture_19 from '../../assets/pictures/picture_19.jpg'
-import picture_20 from '../../assets/pictures/picture_20.jpg'
-import picture_21 from '../../assets/pictures/picture_21.jpg'
-import picture_22 from '../../assets/pictures/picture_22.jpg'
-import picture_23 from '../../assets/pictures/picture_23.jpg'
-import picture_24 from '../../assets/pictures/picture_24.jpg'
-import picture_25 from '../../assets/pictures/picture_25.jpg'
-import picture_26 from '../../assets/pictures/picture_26.jpg'
-import picture_27 from '../../assets/pictures/picture_27.jpg'
-import picture_28 from '../../assets/pictures/picture_28.jpg'
-import picture_29 from '../../assets/pictures/picture_29.jpg'
-import picture_30 from '../../assets/pictures/picture_30.jpg'
-import picture_31 from '../../assets/pictures/picture_31.jpg'
-import picture_32 from '../../assets/pictures/picture_32.jpg'
-import picture_33 from '../../assets/pictures/picture_33.jpg'
-import picture_34 from '../../assets/pictures/picture_34.jpg'
-import picture_35 from '../../assets/pictures/picture_35.jpg'
-import picture_36 from '../../assets/pictures/picture_36.jpg'
-import balloon from '../../assets/bg/balloon.svg'
+import picture_1 from "../../assets/pictures/picture_1.jpg"
+import picture_2 from "../../assets/pictures/picture_2.jpg"
+import picture_3 from "../../assets/pictures/picture_3.jpg"
+import picture_4 from "../../assets/pictures/picture_4.jpg"
+import picture_5 from "../../assets/pictures/picture_5.jpg"
+import picture_6 from "../../assets/pictures/picture_6.jpg"
+import picture_7 from "../../assets/pictures/picture_7.jpg"
+import picture_8 from "../../assets/pictures/picture_8.jpg"
+import picture_9 from "../../assets/pictures/picture_9.jpg"
+import picture_10 from "../../assets/pictures/picture_10.jpg"
+import picture_11 from "../../assets/pictures/picture_11.jpg"
+import picture_12 from "../../assets/pictures/picture_12.jpg"
+import picture_13 from "../../assets/pictures/picture_13.jpg"
+import picture_14 from "../../assets/pictures/picture_14.jpg"
+import picture_15 from "../../assets/pictures/picture_15.jpg"
+import picture_16 from "../../assets/pictures/picture_16.jpg"
+import picture_17 from "../../assets/pictures/picture_17.jpg"
+import picture_18 from "../../assets/pictures/picture_18.jpg"
+import picture_19 from "../../assets/pictures/picture_19.jpg"
+import picture_20 from "../../assets/pictures/picture_20.jpg"
+import picture_21 from "../../assets/pictures/picture_21.jpg"
+import picture_22 from "../../assets/pictures/picture_22.jpg"
+import picture_23 from "../../assets/pictures/picture_23.jpg"
+import picture_24 from "../../assets/pictures/picture_24.jpg"
+import picture_25 from "../../assets/pictures/picture_25.jpg"
+import picture_26 from "../../assets/pictures/picture_26.jpg"
+import picture_27 from "../../assets/pictures/picture_27.jpg"
+import picture_28 from "../../assets/pictures/picture_28.jpg"
+import picture_29 from "../../assets/pictures/picture_29.jpg"
+import picture_30 from "../../assets/pictures/picture_30.jpg"
+import picture_31 from "../../assets/pictures/picture_31.jpg"
+import picture_32 from "../../assets/pictures/picture_32.jpg"
+import picture_33 from "../../assets/pictures/picture_33.jpg"
+import picture_34 from "../../assets/pictures/picture_34.jpg"
+import picture_35 from "../../assets/pictures/picture_35.jpg"
+import picture_36 from "../../assets/pictures/picture_36.jpg"
+import balloon from "../../assets/bg/balloon.svg"
 
-import './AboutUs.scss'
+import "./AboutUs.scss"
 
 interface IAboutUs {}
 
@@ -82,11 +82,11 @@ export const AboutUs: React.FC<IAboutUs> = () => {
     picture_36,
   ]
   return (
-    <div className='about_us__wrapper'>
-      <div className='about_us__content'>
-        <div className='about_us__text'>
-          <div className='about_us__header'>About Us</div>
-          <div className='about_us__body'>
+    <div className="about_us__wrapper">
+      <div className="about_us__content">
+        <div className="about_us__text">
+          <div className="about_us__header">About Us</div>
+          <div className="about_us__body">
             WildHacks is Northwestern's overnight hackathon taking place
             in-person April 4-6, 2025. As Northwestern's largest hackathon,
             WildHacks is an opportunity for students to learn programming skills
@@ -96,14 +96,14 @@ export const AboutUs: React.FC<IAboutUs> = () => {
             levels, majors, and backgrounds.
           </div>
         </div>
-        <div className='balloon'>
-          <img src={balloon} alt='hot air balloon' />
+        <div className="balloon">
+          <img src={balloon} alt="hot air balloon" />
         </div>
       </div>
       <Carousel
-        slideSize={{ base: '90%', sm: '80%', md: '55%', lg: '45%' }}
-        height='100%'
-        slideGap='lg'
+        slideSize={{ base: "90%", sm: "80%", md: "55%", lg: "45%" }}
+        height="100%"
+        slideGap="lg"
         controlSize={18}
         loop
         dragFree
@@ -114,14 +114,14 @@ export const AboutUs: React.FC<IAboutUs> = () => {
           .sort((_a, _b) => Math.random() - 0.5)
           .map(elem => (
             <Carousel.Slide>
-              <div style={{ padding: '1rem' }}>
+              <div style={{ padding: "1rem" }}>
                 <img
                   src={elem}
-                  width='100%'
+                  width="100%"
                   style={{
-                    borderRadius: '25px',
-                    border: '8px solid rgb(29, 74, 22)',
-                    boxShadow: '0px 10px 0px 0px rgba(29, 74, 22, 0.15)',
+                    borderRadius: "25px",
+                    border: "8px solid rgb(29, 74, 22)",
+                    boxShadow: "0px 10px 0px 0px rgba(29, 74, 22, 0.15)",
                   }}
                 />
               </div>

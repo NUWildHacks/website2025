@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-import wildhacksLogo from "../../assets/wildhacks-logo-square.svg";
-import nuLogo from "../../assets/northwestern-logo.svg";
+import wildhacksLogo from "../../assets/wildhacks-logo-square.svg"
+import nuLogo from "../../assets/northwestern-logo.svg"
 
-import "./Footer.scss";
+import "./Footer.scss"
 // import PhotoBar from "../PhotoBar/PhotoBar";
 
 interface IFooter {}
@@ -44,7 +44,7 @@ export const Footer: React.FC<IFooter> = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,18 +1,18 @@
-import tree from "../../assets/bg/tree.svg";
-import nucsLogo from "../../assets/sponsors/nucs.png";
-import garageLogo from "../../assets/sponsors/the-garage.png";
-import omnistackLogo from "../../assets/sponsors/omnistack.png";
-import googleLogo from "../../assets/sponsors/google.png";
+import tree from "../../assets/bg/tree.svg"
+import nucsLogo from "../../assets/sponsors/nucs.png"
+import garageLogo from "../../assets/sponsors/the-garage.png"
+import omnistackLogo from "../../assets/sponsors/omnistack.png"
+import googleLogo from "../../assets/sponsors/google.png"
 
-import WaveVector from "../WaveVector/WaveVector";
-import { colors } from "../../shared/colors.ts";
+import WaveVector from "../WaveVector/WaveVector"
+import { colors } from "../../shared/colors.ts"
 
-import "./Sponsors.scss";
+import "./Sponsors.scss"
 
 interface ISponsors {}
 
 export const Sponsors: React.FC<ISponsors> = () => {
-  const TRANSPARENT = "#00000000";
+  const TRANSPARENT = "#00000000"
   return (
     <>
       <div className="sponsors__backdrop">
@@ -49,7 +49,7 @@ export const Sponsors: React.FC<ISponsors> = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Sponsors;
+export default Sponsors
