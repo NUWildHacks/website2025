@@ -101,7 +101,7 @@ export const AboutUs: React.FC<IAboutUs> = () => {
         </div>
       </div>
       <Carousel
-        slideSize='50%'
+        slideSize={{ base: '90%', sm: '80%', md: '55%', lg: '45%' }}
         height='100%'
         slideGap='lg'
         controlSize={18}
