@@ -54,6 +54,26 @@ export const Splash: React.FC<ISplash> = () => {
         >
           <EmailList />
         </motion.div>
+
+        <motion.div
+          id="header_register_container"
+          style={{ textAlign: "center", marginTop: "20px" }}
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.9,
+            scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
+          }}
+        >
+          <button id="header_register_container">
+            <div className="button__inner_div">
+              <div className="button__bar"></div>
+              Register Now
+              <div className="button__bar"></div>
+            </div>
+          </button>
+        </motion.div>
       </div>
 
       <motion.div

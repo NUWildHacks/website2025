@@ -83,6 +83,42 @@
     }
   }
 
+  #header_register_container {
+    background-color: colors.$global-very-dark-green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.75rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      background-color: colors.$global-brown;
+      transform: translateY(-2px);
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      transition: all 0.25s ease-in-out;
+    }
+
+    .button__inner_div {
+      .button__bar {
+        padding-left: 0.4rem;
+        background-color: colors.$global-yellow-2;
+        border-radius: 20px;
+        width: 10px;
+        align-items: center;
+      }
+
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+
   #header__backdrop {
     display: flex;
     align-items: center;
