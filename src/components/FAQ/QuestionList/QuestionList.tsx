@@ -1,18 +1,18 @@
-import Question, { IQuestion } from "../Question/Question"
+import Question, { IQuestion } from "../Question/Question";
 
-import "../FAQ.scss"
+import "../FAQ.scss";
 
 export interface IQuestionList {
-  header: string
-  questions: Array<IQuestion>
+  header: string;
+  questions: Array<IQuestion>;
 }
 
 export const QuestionList: React.FC<IQuestionList> = ({
   header,
   questions,
 }) => {
-  let first_half_of_questions = questions.slice(0, questions.length / 2)
-  let last_half_of_questions = questions.slice(questions.length / 2)
+  let first_half_of_questions = questions.slice(0, questions.length / 2);
+  let last_half_of_questions = questions.slice(questions.length / 2);
   return (
     <div className="faq__questionlist">
       <div>
@@ -39,7 +39,7 @@ export const QuestionList: React.FC<IQuestionList> = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default QuestionList
+export default QuestionList;

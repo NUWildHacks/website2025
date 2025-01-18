@@ -1,7 +1,7 @@
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 interface INavigationMotionDiv {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export const NavigationMotionDiv: React.FC<INavigationMotionDiv> = ({
@@ -20,7 +20,7 @@ export const NavigationMotionDiv: React.FC<INavigationMotionDiv> = ({
     >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
-export default NavigationMotionDiv
+export default NavigationMotionDiv;

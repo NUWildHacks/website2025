@@ -1,11 +1,11 @@
-import "./MainWrapper.scss"
+import "./MainWrapper.scss";
 
 interface IMainWrapper {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export const MainWrapper: React.FC<IMainWrapper> = ({ children }) => {
-  return <div className="wrapper__div">{children}</div>
-}
+  return <div className="wrapper__div">{children}</div>;
+};
 
-export default MainWrapper
+export default MainWrapper;

@@ -1,13 +1,13 @@
-import QuestionList from "./QuestionList/QuestionList"
-import QUESTION_LIST from "../../shared/questions"
+import QuestionList from "./QuestionList/QuestionList";
+import QUESTION_LIST from "../../shared/questions";
 
-import "./FAQ.scss"
-import { useOs } from "@mantine/hooks"
+import "./FAQ.scss";
+import { useOs } from "@mantine/hooks";
 
 interface IFAQ {}
 
 export const FAQ: React.FC<IFAQ> = () => {
-  const os = useOs()
+  const os = useOs();
 
   // on mobile, no tree or buttons; no space.
   if (os === "ios" || os === "android") {
@@ -26,7 +26,7 @@ export const FAQ: React.FC<IFAQ> = () => {
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   // on non-mobile, add buttons to switch category
@@ -45,7 +45,7 @@ export const FAQ: React.FC<IFAQ> = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FAQ
+export default FAQ;

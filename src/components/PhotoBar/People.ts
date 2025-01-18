@@ -1,8 +1,8 @@
 export interface IPerson {
-  name: string
-  position: string
-  img: string // images should have square dimensions
-  link?: string
+  name: string;
+  position: string;
+  img: string; // images should have square dimensions
+  link?: string;
 }
 
 const People: ReadonlyArray<IPerson> = [
@@ -42,6 +42,6 @@ const People: ReadonlyArray<IPerson> = [
     position: "Placeholder",
     img: "https://www.thispersondoesnotexist.com",
   },
-]
+];
 
-export default People
+export default People;

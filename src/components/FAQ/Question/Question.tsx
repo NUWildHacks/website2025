@@ -1,29 +1,29 @@
-import React, { ReactNode, useState } from "react"
+import React, { ReactNode, useState } from "react";
 
-import flowerOne from "../../../assets/flowers/flower-1.svg"
-import flowerTwo from "../../../assets/flowers/flower-2.svg"
-import flowerThree from "../../../assets/flowers/flower-3.svg"
+import flowerOne from "../../../assets/flowers/flower-1.svg";
+import flowerTwo from "../../../assets/flowers/flower-2.svg";
+import flowerThree from "../../../assets/flowers/flower-3.svg";
 
-import "./Question.scss"
+import "./Question.scss";
 
 export interface IQuestion {
-  question: string
-  answer: string | ReactNode
+  question: string;
+  answer: string | ReactNode;
 }
 
 const getRandomFlower = () => {
-  let flowers = [flowerOne, flowerTwo, flowerThree]
-  let index = Math.round(Math.random() * 2)
-  return flowers[index]
-}
+  let flowers = [flowerOne, flowerTwo, flowerThree];
+  let index = Math.round(Math.random() * 2);
+  return flowers[index];
+};
 
 export const Question: React.FC<IQuestion> = ({ question, answer }) => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
   return (
     <div className="q">
       <div
         onClick={() => {
-          setActive(!active)
+          setActive(!active);
         }}
         className={`q__question_text ${active && "q__question_text__active"}`}
       >
@@ -36,7 +36,7 @@ export const Question: React.FC<IQuestion> = ({ question, answer }) => {
       />
       {active && <div className="q__answer_text">{answer}</div>}
     </div>
-  )
-}
+  );
+};
 
-export default Question
+export default Question;

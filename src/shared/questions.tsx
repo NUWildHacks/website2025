@@ -1,4 +1,4 @@
-import { IQuestionList } from "../components/FAQ/QuestionList/QuestionList"
+import { IQuestionList } from "../components/FAQ/QuestionList/QuestionList";
 
 export const QUESTION_LIST: Array<IQuestionList> = [
   {
@@ -209,6 +209,6 @@ export const QUESTION_LIST: Array<IQuestionList> = [
       },
     ],
   },
-]
+];
 
-export default QUESTION_LIST
+export default QUESTION_LIST;

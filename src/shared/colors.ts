@@ -9,4 +9,4 @@ export const colors = {
   yellow_2: "#d3914a",
   brown: "#684c28",
   rocks: "#9e9282",
-}
+};
