@@ -1,4 +1,5 @@
 @use "../../shared/colors";
+@use "../../shared/breakpoints";
 
 .sour-gummy-heading {
   font-family: "Sour Gummy", sans-serif;
@@ -15,20 +16,38 @@
 .sponsors__backdrop {
   background-color: colors.$global-yellow-2;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   position: relative;
-  padding-bottom: 10rem;
+  margin: 0;
+  flex-direction: column;
+  padding-bottom: 5rem;
+
+  @include breakpoints.sm {
+    flex-direction: row;
+    margin: auto;
+    padding-bottom: 10rem;
+  }
 
   .sponsors__tree {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+
+    @include breakpoints.sm {
+      visibility: visible;
+      width: fit-content;
+    }
+
     img {
-      width: 25vw;
+      width: 30vw;
       position: absolute;
       left: 0;
       bottom: 3%;
-    }
 
-    width: fit-content;
+      @include breakpoints.md {
+        width: 25vw;
+      }
+    }
   }
 
   #sponsors__wave {
@@ -56,11 +75,16 @@
   }
 
   .sponsors__inner_wrapper {
-    margin-left: 20%;
-    margin-right: 2.5%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    @include breakpoints.sm {
+      margin-left: 20%;
+      margin-right: 2.5%;
+    }
 
     .sponsors__header {
       font-size: 2rem;
@@ -78,35 +102,6 @@
       @extend .sour-gummy-heading;
 
       text-align: center;
-    }
-  }
-}
-
-@media (max-width: 1000px) {
-  .sponsors__backdrop {
-    .sponsors__tree {
-      img {
-        width: 30vw;
-      }
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .sponsors__backdrop {
-    margin: 0;
-    flex-direction: column;
-    padding-bottom: 5rem;
-
-    .sponsors__tree {
-      visibility: hidden;
-      height: 0;
-      width: 0;
-    }
-
-    .sponsors__inner_wrapper {
-      margin-left: 2%;
-      margin-right: 2%;
     }
   }
 }
