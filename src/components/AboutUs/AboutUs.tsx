@@ -1,5 +1,3 @@
-import { Carousel } from "@mantine/carousel"
-
 import picture_1 from "../../assets/pictures/picture_1.jpg"
 import picture_2 from "../../assets/pictures/picture_2.jpg"
 import picture_3 from "../../assets/pictures/picture_3.jpg"
@@ -38,7 +36,24 @@ import picture_35 from "../../assets/pictures/picture_35.jpg"
 import picture_36 from "../../assets/pictures/picture_36.jpg"
 import balloon from "../../assets/bg/balloon.svg"
 
+import { motion, Variants } from "motion/react"
+import { Carousel } from "@mantine/carousel"
+
 import "./AboutUs.scss"
+
+const balloonVariants: Variants = {
+  offscreen: {
+      x: 700,
+  },
+  onscreen: {
+      x: 50,
+      transition: {
+          type: "spring",
+          bounce: 0.25,
+          duration: 3.2,
+      },
+  },
+}
 
 interface IAboutUs {}
 
@@ -80,7 +95,8 @@ export const AboutUs: React.FC<IAboutUs> = () => {
     picture_34,
     picture_35,
     picture_36,
-  ]
+  ];
+
   return (
     <div className="about_us__wrapper">
       <div className="about_us__content">
@@ -96,9 +112,16 @@ export const AboutUs: React.FC<IAboutUs> = () => {
             levels, majors, and backgrounds.
           </div>
         </div>
-        <div className="balloon">
-          <img src={balloon} alt="hot air balloon" />
-        </div>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.8 }}
+          className="balloon"
+        >
+          <motion.div variants={balloonVariants}>
+            <img src={balloon} alt="hot air balloon" />
+          </motion.div>
+        </motion.div>
       </div>
       <Carousel
         slideSize={{ base: "90%", sm: "80%", md: "55%", lg: "45%" }}
