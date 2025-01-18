@@ -1,4 +1,5 @@
 @use "../../shared/colors";
+@use "../../shared/breakpoints";
 
 .sour-gummy-heading {
   font-family: "Sour Gummy", sans-serif;
@@ -20,20 +21,31 @@
 
 #footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: column;
   gap: 0.5rem;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
 
+  @include breakpoints.sm {
+    flex-direction: row;
+  }
+
   .footer__flexbox {
-    width: 33%;
     display: flex;
     flex-direction: row;
     gap: 1em;
     text-wrap: nowrap;
+    padding: 0.5rem;
+    width: 100%;
     align-items: center;
+    justify-content: center;
+
+    @include breakpoints.sm {
+      padding: 0;
+      width: 33%;
+    }
 
     .footer__image {
       img {
@@ -55,8 +67,12 @@
 
   .footer__school_image {
     display: flex;
-    justify-content: end;
     align-items: center;
+
+    @include breakpoints.sm {
+      justify-content: end;
+    }
+
     img {
       width: 12rem;
     }
@@ -68,18 +84,5 @@
 
   a {
     color: colors.$global-light;
-  }
-}
-
-@media (max-width: 800px) {
-  #footer {
-    flex-direction: column;
-
-    .footer__flexbox {
-      padding: 0.5rem;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
   }
 }

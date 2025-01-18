@@ -1,4 +1,5 @@
 @use "../../shared/colors";
+@use "../../shared/breakpoints";
 
 .sour-gummy-heading {
   font-family: "Sour Gummy", sans-serif;
@@ -14,15 +15,36 @@
 
 .faq__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: colors.$global-very-dark-green;
   justify-content: center;
   overflow: visible;
+  margin: 0;
+
+  @include breakpoints.sm {
+    flex-direction: row;
+  }
+
+  .faq__tree {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+
+    @include breakpoints.sm {
+      height: auto;
+      width: auto;
+      visibility: visible;
+    }
+  }
 
   .faq__right_side {
-    width: 60%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0;
+    width: 100%;
+
+    @include breakpoints.sm {
+      width: 60%;
+      margin: 0 1rem;
+    }
   }
 
   .faq__header {
@@ -30,6 +52,11 @@
     margin-bottom: 1rem;
     color: colors.$global-yellow-1;
     @extend .sour-gummy-heading;
+    padding: 1rem;
+
+    @include breakpoints.sm {
+      padding: 0;
+    }
   }
 
   .faq__subheader {
@@ -37,6 +64,11 @@
     margin-bottom: 1rem;
     color: colors.$global-light;
     @extend .sour-gummy-subheading;
+    padding: 1rem;
+
+    @include breakpoints.sm {
+      padding: 0;
+    }
   }
 
   .faq__questionlist {
@@ -50,46 +82,19 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
+
+    @include breakpoints.sm {
+      padding: 0;
+    }
 
     .faq__questions_column {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .faq__wrapper {
-    margin: 0;
-    flex-direction: column;
-
-    .faq__tree {
-      visibility: hidden;
-      height: 0;
-      width: 0;
-    }
-
-    .faq__right_side {
-      margin: 0;
       width: 100%;
-    }
-
-    .faq__header {
-      padding: 1rem;
-    }
-
-    .faq__subheader {
-      padding: 1rem;
-    }
-
-    .faq__questions_container {
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
-
-      .faq__questions_column {
-        width: 100%;
+      @include breakpoints.sm {
+        width: auto;
       }
     }
   }

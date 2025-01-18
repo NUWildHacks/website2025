@@ -1,4 +1,5 @@
 @use "../../shared/colors";
+@use "../../shared/breakpoints";
 
 .sour-gummy-heading {
   font-family: "Sour Gummy", sans-serif;
@@ -20,6 +21,12 @@
 
   position: relative;
 
+  padding: 1rem;
+
+  @include breakpoints.sm {
+    padding: 0;
+  }
+
   .header__splash_words {
     color: colors.$global-very-dark-green;
     text-align: center;
@@ -33,10 +40,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    top: 0;
     gap: 1rem;
-
     position: absolute;
+
+    @include breakpoints.sm {
+      top: auto;
+    }
   }
 
   #header__logo_container {
@@ -45,10 +55,20 @@
     align-items: center;
     justify-content: center;
 
+    width: 80vw;
     gap: 1rem;
+
+    @include breakpoints.sm {
+      width: auto;
+    }
 
     #cloud {
       height: 10vw;
+      visibility: hidden;
+
+      @include breakpoints.sm {
+        visibility: visible;
+      }
     }
   }
 
@@ -56,6 +76,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 65%;
+
+    @include breakpoints.xs {
+      top: auto;
+    }
   }
 
   #header__backdrop {
@@ -84,40 +109,6 @@
       img {
         height: max(40vw, 30vh);
       }
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .header__box {
-    padding: 1rem;
-
-    #header__big_container {
-      #header__logo_container {
-        width: 80vw;
-
-        #cloud {
-          visibility: hidden;
-        }
-      }
-
-      top: 0;
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .header__box {
-    #header__email_container {
-      top: 70%;
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .header__box {
-    #header__email_container {
-      top: 65%;
     }
   }
 }
