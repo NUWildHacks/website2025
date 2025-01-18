@@ -1,4 +1,5 @@
 @use "../../shared/colors";
+@use "../../shared/breakpoints";
 
 .sour-gummy-heading {
   font-family: "Sour Gummy", sans-serif;
@@ -7,18 +8,62 @@
 }
 
 .about_us__wrapper {
+  padding: 8% 0;
   background-color: colors.$global-dark-green;
   color: colors.$global-light;
-  padding: 1rem;
 
-  .about_us__header {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: colors.$global-yellow-1;
-    @extend .sour-gummy-heading;
+  @include breakpoints.xl {
+    padding-top: 0;
   }
+  // padding: 1rem;
 
-  .about_us__body {
-    margin-bottom: 1rem;
+  .about_us__content {
+    padding: 0;
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    @include breakpoints.xl {
+      padding: 4rem 6rem;
+      width: 100%;
+    }
+
+    .about_us__text {
+      flex: 1;
+
+      @include breakpoints.lg {
+        flex: 3;
+      }
+      .about_us__header {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+        color: colors.$global-yellow-1;
+        @extend .sour-gummy-heading;
+      }
+      .about_us__body {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .balloon {
+      flex: 1;
+      position: relative;
+      display: none;
+      justify-content: end;
+
+      @include breakpoints.sm {
+        display: flex;
+      }
+
+      @include breakpoints.lg {
+        flex: 2;
+      }
+      img {
+        width: 85%;
+      }
+    }
   }
 }

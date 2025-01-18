@@ -1,5 +1,3 @@
-import { Carousel } from "@mantine/carousel";
-
 import picture_1 from "../../assets/pictures/picture_1.jpg";
 import picture_2 from "../../assets/pictures/picture_2.jpg";
 import picture_3 from "../../assets/pictures/picture_3.jpg";
@@ -36,8 +34,26 @@ import picture_33 from "../../assets/pictures/picture_33.jpg";
 import picture_34 from "../../assets/pictures/picture_34.jpg";
 import picture_35 from "../../assets/pictures/picture_35.jpg";
 import picture_36 from "../../assets/pictures/picture_36.jpg";
+import balloon from "../../assets/bg/balloon.svg";
+
+import { motion, Variants } from "motion/react";
+import { Carousel } from "@mantine/carousel";
 
 import "./AboutUs.scss";
+
+const balloonVariants: Variants = {
+  offscreen: {
+    x: 700,
+  },
+  onscreen: {
+    x: 50,
+    transition: {
+      type: "spring",
+      bounce: 0.25,
+      duration: 3.2,
+    },
+  },
+};
 
 interface IAboutUs {}
 
@@ -80,19 +96,35 @@ export const AboutUs: React.FC<IAboutUs> = () => {
     picture_35,
     picture_36,
   ];
+
   return (
     <div className="about_us__wrapper">
-      <div className="about_us__header">About Us</div>
-      <div className="about_us__body">
-        WildHacks is Northwestern's overnight hackathon taking place in-person
-        April 5-7 2024. As Northwestern's largest hackathon, WildHacks is an
-        opportunity for students to learn programming skills and develop a final
-        project in a collaborative and inclusive environment. Through workshops,
-        mentorship, and prizes, WildHacks aims to be an inclusive event that
-        welcomes students of all skill levels, majors, and backgrounds.
+      <div className="about_us__content">
+        <div className="about_us__text">
+          <div className="about_us__header">About Us</div>
+          <div className="about_us__body">
+            WildHacks is Northwestern's overnight hackathon taking place
+            in-person April 4-6, 2025. As Northwestern's largest hackathon,
+            WildHacks is an opportunity for students to learn programming skills
+            and develop a final project in a collaborative and inclusive
+            environment. Through workshops, mentorship, and prizes, WildHacks
+            aims to be an inclusive event that welcomes students of all skill
+            levels, majors, and backgrounds.
+          </div>
+        </div>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.8 }}
+          className="balloon"
+        >
+          <motion.div variants={balloonVariants}>
+            <img src={balloon} alt="hot air balloon" />
+          </motion.div>
+        </motion.div>
       </div>
       <Carousel
-        slideSize="70%"
+        slideSize={{ base: "90%", sm: "80%", md: "55%", lg: "45%" }}
         height="100%"
         slideGap="lg"
         controlSize={18}
@@ -103,10 +135,18 @@ export const AboutUs: React.FC<IAboutUs> = () => {
       >
         {pictures
           .sort((_a, _b) => Math.random() - 0.5)
-          .map((elem) => (
+          .map(elem => (
             <Carousel.Slide>
               <div style={{ padding: "1rem" }}>
-                <img src={elem} width="100%" />
+                <img
+                  src={elem}
+                  width="100%"
+                  style={{
+                    borderRadius: "25px",
+                    border: "8px solid rgb(29, 74, 22)",
+                    boxShadow: "0px 10px 0px 0px rgba(29, 74, 22, 0.15)",
+                  }}
+                />
               </div>
             </Carousel.Slide>
           ))}
