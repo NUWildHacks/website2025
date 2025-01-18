@@ -1,6 +1,12 @@
 @use "../../shared/colors";
 @use "../../shared/breakpoints";
 
+.sour-gummy-heading {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
 .about_us__wrapper {
   padding: 8% 0;
   background-color: colors.$global-dark-green;

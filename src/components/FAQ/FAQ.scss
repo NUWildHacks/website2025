@@ -93,7 +93,7 @@
       flex-direction: column;
       gap: 1rem;
       width: 100%;
-      
+
       @include breakpoints.sm {
         width: auto;
       }
