@@ -1,7 +1,7 @@
-@use "../../shared/colors";
+@use '../../shared/colors';
 
 .sour-gummy-heading {
-  font-family: "Sour Gummy", sans-serif;
+  font-family: 'Sour Gummy', sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
 }
@@ -9,16 +9,41 @@
 .about_us__wrapper {
   background-color: colors.$global-dark-green;
   color: colors.$global-light;
-  padding: 1rem;
+  // padding: 1rem;
 
-  .about_us__header {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: colors.$global-yellow-1;
-    @extend .sour-gummy-heading;
+  .about_us__content {
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .about_us__text {
+      flex: 3;
+      .about_us__header {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+        color: colors.$global-yellow-1;
+        @extend .sour-gummy-heading;
+      }
+      .about_us__body {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .balloon {
+      flex: 2;
+      position: relative;
+      display: flex;
+      justify-content: end;
+
+      img {
+        width: 85%;
+      }
+    }
   }
 
-  .about_us__body {
-    margin-bottom: 1rem;
-  }
+  // .about_us__text {
+  //   width: 50%;
+  // }
 }
