@@ -104,8 +104,8 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             WildHacks is open to students of <span>all experience levels</span>!
-            We'll send out resources and we'll will have a Discord server on which you can ask
-            questions.
+            We'll send out resources and we'll will have a Discord server on
+            which you can ask questions.
           </div>
         ),
       },
@@ -156,7 +156,10 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         question: "How can I prepare for WildHacks?",
         answer: (
           <div>
-            WildHacks is partnering with other computing clubs on campus to host introductory workshop nights during the week leading up to the hackathon. <span>These are 100% optional</span> but will not be recorded.
+            WildHacks is partnering with other computing clubs on campus to host
+            introductory workshop nights during the week leading up to the
+            hackathon. <span>These are 100% optional</span> but will not be
+            recorded.
           </div>
         ),
       },

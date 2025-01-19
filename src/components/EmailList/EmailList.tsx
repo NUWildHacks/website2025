@@ -108,9 +108,12 @@ export const EmailList: React.FC<IEmailList> = () => {
       </Modal.Root>
 
       <div className="splash__button_container">
-        <SplashScreenButton id="button__register_now" onClick={() => {
-          window.location.href = "https://dashboard.wildhacks.net/"
-        }}>
+        <SplashScreenButton
+          id="button__register_now"
+          onClick={() => {
+            window.location.href = "https://dashboard.wildhacks.net/";
+          }}
+        >
           Register now!
         </SplashScreenButton>
         <SplashScreenButton id="button__email_list" onClick={open}>

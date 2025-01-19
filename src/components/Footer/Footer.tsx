@@ -22,18 +22,23 @@ export const Footer: React.FC<IFooter> = () => {
           <h2>WildHacks 2025</h2>
         </div>
 
-        
         <div className="footer__flexbox footer__school_image">
           <a href="https://www.northwestern.edu">
             <img src={nuLogo} alt="Northwestern University logo" />
           </a>
         </div>
-        
+
         <div className="footer__flexbox footer__code_of_conduct">
-          <a id="nu" href="https://www.northwestern.edu/communitystandards/student-handbook/student-handbook.pdf">
+          <a
+            id="nu"
+            href="https://www.northwestern.edu/communitystandards/student-handbook/student-handbook.pdf"
+          >
             Northwestern University Code of Conduct
           </a>
-          <a id="mlh" href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md">
+          <a
+            id="mlh"
+            href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+          >
             Major League Hacking Code of Conduct
           </a>
         </div>
