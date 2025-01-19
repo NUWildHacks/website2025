@@ -1,4 +1,4 @@
-import { Modal, TextInput } from "@mantine/core";
+import { Button, Modal, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useDisclosure } from "@mantine/hooks";
 
@@ -15,6 +15,7 @@ export const EmailList: React.FC<IEmailList> = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
   const [status, setStatus] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
 
   const form = useForm({
     mode: "uncontrolled",
@@ -51,6 +52,7 @@ export const EmailList: React.FC<IEmailList> = () => {
               <form
                 onSubmit={form.onSubmit(values => {
                   setStatus("");
+                  setIsLoading(true);
                   axios
                     .post("https://porygon.andrewli.org/wildcat/subscribe", {
                       first_name: values.firstName,
@@ -59,11 +61,13 @@ export const EmailList: React.FC<IEmailList> = () => {
                     })
                     .then(_ => {
                       setStatus("Success!");
+                      setIsLoading(false);
                     })
                     .catch(_ => {
                       setStatus(
                         "Failed! You might already be subscribed, or there was an internal server error.",
                       );
+                      setIsLoading(false);
                     });
                 })}
               >
@@ -100,7 +104,7 @@ export const EmailList: React.FC<IEmailList> = () => {
                   type="email"
                   {...form.getInputProps("email")}
                 />
-                <button type="submit">Register</button>
+                <Button loading={isLoading} variant="filled" color="blue" type="submit">Subscribe</Button>
               </form>
             </div>
           </Modal.Body>
