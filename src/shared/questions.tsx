@@ -44,8 +44,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             The hackathon will be <span>software-focused</span>, but don't worry
-            if you don't have prior coding experience. We'll send out resources
-            and have workshops to help you learn how to code.
+            if you don't have prior coding experience.
           </div>
         ),
       },
@@ -105,8 +104,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             WildHacks is open to students of <span>all experience levels</span>!
-            We'll send out resources with beginner-friendly tutorials and
-            workshops, and we'll will have a Discord server on which you can ask
+            We'll send out resources and we'll will have a Discord server on which you can ask
             questions.
           </div>
         ),
@@ -155,14 +153,10 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: "Transportation will not be reimbursed.",
       },
       {
-        question: "Do I have to come to workshop night?",
+        question: "How can I prepare for WildHacks?",
         answer: (
           <div>
-            <span>Workshop Night is optional!</span> The actual hacking portion
-            of the hackathon will not start until the morning of April 5.
-            However, if you're interested in learning some skills to help you
-            with your hackathon project, we recommend coming to Workshop Night.
-            We'll provide food!
+            WildHacks is partnering with other computing clubs on campus to host introductory workshop nights during the week leading up to the hackathon. <span>These are 100% optional</span> but will not be recorded.
           </div>
         ),
       },
