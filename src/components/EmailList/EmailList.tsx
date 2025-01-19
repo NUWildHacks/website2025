@@ -1,5 +1,5 @@
 import { Modal, TextInput } from "@mantine/core";
-import { useForm } from '@mantine/form';
+import { useForm } from "@mantine/form";
 import { useDisclosure } from "@mantine/hooks";
 
 import axios from "axios";
@@ -15,15 +15,15 @@ export const EmailList: React.FC<IEmailList> = () => {
   const [status, setStatus] = React.useState("");
 
   const form = useForm({
-    mode: 'uncontrolled',
+    mode: "uncontrolled",
     initialValues: {
-      firstName: '',
-      lastName: '',
-      email: '',
+      firstName: "",
+      lastName: "",
+      email: "",
     },
 
     validate: {
-      email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+      email: value => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
     },
   });
 
@@ -46,19 +46,33 @@ export const EmailList: React.FC<IEmailList> = () => {
           </Modal.Header>
           <Modal.Body>
             <div className="email_form__container">
-              <form onSubmit={form.onSubmit((values) => {
-                setStatus("");
-                axios.post("https://porygon.andrewli.org/wildcat/subscribe", {
-                  first_name: values.firstName,
-                  last_name: values.lastName,
-                  email_address: values.email
-                }).then((_) => {
-                  setStatus("Success!")
-                }).catch((_) => {
-                  setStatus("Failed! You might already be subscribed, or there was an internal server error.")
-                });
-              })}>
-                <span style={{color: status === "Success!" ? "green" : "red", textAlign: "center"}}>{status}</span>
+              <form
+                onSubmit={form.onSubmit(values => {
+                  setStatus("");
+                  axios
+                    .post("https://porygon.andrewli.org/wildcat/subscribe", {
+                      first_name: values.firstName,
+                      last_name: values.lastName,
+                      email_address: values.email,
+                    })
+                    .then(_ => {
+                      setStatus("Success!");
+                    })
+                    .catch(_ => {
+                      setStatus(
+                        "Failed! You might already be subscribed, or there was an internal server error.",
+                      );
+                    });
+                })}
+              >
+                <span
+                  style={{
+                    color: status === "Success!" ? "green" : "red",
+                    textAlign: "center",
+                  }}
+                >
+                  {status}
+                </span>
                 <TextInput
                   withAsterisk
                   className="email_form__input"
