@@ -1,16 +1,32 @@
+import { Modal, TextInput } from "@mantine/core";
+import { useForm } from '@mantine/form';
 import { useDisclosure } from "@mantine/hooks";
-import { Modal } from "@mantine/core";
+
+import axios from "axios";
 
 import "./EmailList.scss";
+import React from "react";
 
 interface IEmailList {}
 
 export const EmailList: React.FC<IEmailList> = () => {
   const [opened, { open, close }] = useDisclosure(false);
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    //const data: FormData = new FormData(e.target as HTMLFormElement);
-  };
+
+  const [status, setStatus] = React.useState("");
+
+  const form = useForm({
+    mode: 'uncontrolled',
+    initialValues: {
+      firstName: '',
+      lastName: '',
+      email: '',
+    },
+
+    validate: {
+      email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+    },
+  });
+
   return (
     <div className="email_list__container">
       <Modal.Root
@@ -30,19 +46,44 @@ export const EmailList: React.FC<IEmailList> = () => {
           </Modal.Header>
           <Modal.Body>
             <div className="email_form__container">
-              <form onSubmit={handleSubmit}>
-                <div className="email_form__input">
-                  <label htmlFor="firstName">First Name</label>
-                  <input type="text" name="firstName" id="firstName" required />
-                </div>
-                <div className="email_form__input">
-                  <label htmlFor="lastName">Last Name</label>
-                  <input type="text" name="lastName" id="lastName" required />
-                </div>
-                <div className="email_form__input">
-                  <label htmlFor="email">Email</label>
-                  <input type="email" name="email" id="email" required />
-                </div>
+              <form onSubmit={form.onSubmit((values) => {
+                setStatus("");
+                axios.post("https://porygon.andrewli.org/wildcat/subscribe", {
+                  first_name: values.firstName,
+                  last_name: values.lastName,
+                  email_address: values.email
+                }).then((_) => {
+                  setStatus("Success!")
+                }).catch((_) => {
+                  setStatus("Failed! You might already be subscribed, or there was an internal server error.")
+                });
+              })}>
+                <span style={{color: status === "Success!" ? "green" : "red", textAlign: "center"}}>{status}</span>
+                <TextInput
+                  withAsterisk
+                  className="email_form__input"
+                  label="First Name"
+                  placeholder="Jane"
+                  key={form.key("firstName")}
+                  {...form.getInputProps("firstName")}
+                />
+                <TextInput
+                  withAsterisk
+                  className="email_form__input"
+                  label="Last Name"
+                  placeholder="Doe"
+                  key={form.key("lastName")}
+                  {...form.getInputProps("lastName")}
+                />
+                <TextInput
+                  withAsterisk
+                  className="email_form__input"
+                  label="Email"
+                  placeholder="wildcat@northwestern.edu"
+                  key={form.key("email")}
+                  type="email"
+                  {...form.getInputProps("email")}
+                />
                 <button type="submit">Register</button>
               </form>
             </div>
