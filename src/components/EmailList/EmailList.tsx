@@ -104,7 +104,14 @@ export const EmailList: React.FC<IEmailList> = () => {
                   type="email"
                   {...form.getInputProps("email")}
                 />
-                <Button loading={isLoading} variant="filled" color="blue" type="submit">Subscribe</Button>
+                <Button
+                  loading={isLoading}
+                  variant="filled"
+                  color="blue"
+                  type="submit"
+                >
+                  Subscribe
+                </Button>
               </form>
             </div>
           </Modal.Body>
