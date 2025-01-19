@@ -21,8 +21,8 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         question: "When is WildHacks?",
         answer: (
           <div>
-            WildHacks 2024 will take place from{" "}
-            <span>Friday, April 4, 2025</span> to{" "}
+            WildHacks 2025 will take place from{" "}
+            <span>Saturday, April 5, 2025</span> to{" "}
             <span>Sunday, April 6, 2025</span>. However, hacking won't start
             until the tracks are released on <span>April 5</span> at{" "}
             <span>11:00 AM</span>, with check in for the event starting at{" "}
@@ -159,7 +159,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             <span>Workshop Night is optional!</span> The actual hacking portion
-            of the hackathon will not start until the morning of April 6.
+            of the hackathon will not start until the morning of April 5.
             However, if you're interested in learning some skills to help you
             with your hackathon project, we recommend coming to Workshop Night.
             We'll provide food!
@@ -172,7 +172,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
           <div>
             No, you are free to leave the event before the hackathon ends!
             However, in order to claim prizes, you must be present at the
-            closing ceremony on Sunday, April 7 at 4:00 PM.
+            closing ceremony on the afternoon of Sunday, April 6.
           </div>
         ),
       },
