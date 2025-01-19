@@ -28,7 +28,6 @@ import picture_27 from "../../assets/pictures/picture_27.jpg";
 import picture_28 from "../../assets/pictures/picture_28.jpg";
 import picture_29 from "../../assets/pictures/picture_29.jpg";
 import picture_30 from "../../assets/pictures/picture_30.jpg";
-import picture_31 from "../../assets/pictures/picture_31.jpg";
 import picture_32 from "../../assets/pictures/picture_32.jpg";
 import picture_33 from "../../assets/pictures/picture_33.jpg";
 import picture_34 from "../../assets/pictures/picture_34.jpg";
@@ -89,7 +88,6 @@ export const AboutUs: React.FC<IAboutUs> = () => {
     picture_28,
     picture_29,
     picture_30,
-    picture_31,
     picture_32,
     picture_33,
     picture_34,
