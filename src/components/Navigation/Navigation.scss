@@ -19,8 +19,9 @@
   }
 
   .navigation__logo_wrapper {
-    width: 96px;
-    min-width: 96px;
+    margin-left: clamp(5em, 15vw, 7em);
+    width: clamp(72px, 8vw, 96px);
+    min-width: 72px;
 
     img {
       width: 100%;
