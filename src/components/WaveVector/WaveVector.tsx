@@ -49,8 +49,10 @@ export const WaveVector: React.FC<IWaveVector> = ({
         className={`${flip && "upside_down"}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
+        width="100%"
+        height="100%"
       >
-        <rect x="0" y="0" width="1000" height="90" style={outerColor} />
+        <rect x="0" y="0" width="100%" height="100%" style={outerColor} />
         {waves[waviness]}
       </svg>
     </div>

@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: start;
 
-  position: sticky;
+  position: relative;
   top: 0;
 
   @include breakpoints.sm {
@@ -19,7 +19,7 @@
   }
 
   .navigation__logo_wrapper {
-    margin-left: clamp(5em, 15vw, 7em);
+    margin-left: clamp(50px, 15vw,150px);
     width: clamp(72px, 8vw, 96px);
     min-width: 72px;
 
