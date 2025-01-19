@@ -21,8 +21,8 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         question: "When is WildHacks?",
         answer: (
           <div>
-            WildHacks 2024 will take place from{" "}
-            <span>Friday, April 4, 2025</span> to{" "}
+            WildHacks 2025 will take place from{" "}
+            <span>Saturday, April 5, 2025</span> to{" "}
             <span>Sunday, April 6, 2025</span>. However, hacking won't start
             until the tracks are released on <span>April 5</span> at{" "}
             <span>11:00 AM</span>, with check in for the event starting at{" "}
@@ -44,8 +44,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             The hackathon will be <span>software-focused</span>, but don't worry
-            if you don't have prior coding experience. We'll send out resources
-            and have workshops to help you learn how to code.
+            if you don't have prior coding experience.
           </div>
         ),
       },
@@ -105,9 +104,8 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             WildHacks is open to students of <span>all experience levels</span>!
-            We'll send out resources with beginner-friendly tutorials and
-            workshops, and we'll will have a Discord server on which you can ask
-            questions.
+            We'll send out resources and we'll will have a Discord server on
+            which you can ask questions.
           </div>
         ),
       },
@@ -155,14 +153,13 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: "Transportation will not be reimbursed.",
       },
       {
-        question: "Do I have to come to workshop night?",
+        question: "How can I prepare for WildHacks?",
         answer: (
           <div>
-            <span>Workshop Night is optional!</span> The actual hacking portion
-            of the hackathon will not start until the morning of April 6.
-            However, if you're interested in learning some skills to help you
-            with your hackathon project, we recommend coming to Workshop Night.
-            We'll provide food!
+            WildHacks is partnering with other computing clubs on campus to host
+            introductory workshop nights during the week leading up to the
+            hackathon. <span>These are 100% optional</span> but will not be
+            recorded.
           </div>
         ),
       },
@@ -172,7 +169,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
           <div>
             No, you are free to leave the event before the hackathon ends!
             However, in order to claim prizes, you must be present at the
-            closing ceremony on Sunday, April 7 at 4:00 PM.
+            closing ceremony on the afternoon of Sunday, April 6.
           </div>
         ),
       },

@@ -3,6 +3,7 @@ import nucsLogo from "../../assets/sponsors/nucs.png";
 import garageLogo from "../../assets/sponsors/the-garage.png";
 import omnistackLogo from "../../assets/sponsors/omnistack.png";
 import googleLogo from "../../assets/sponsors/google.png";
+import stickersLogo from "../../assets/sponsors/stand-out-stickers.svg";
 
 import WaveVector from "../WaveVector/WaveVector";
 import { colors } from "../../shared/colors.ts";
@@ -44,6 +45,9 @@ export const Sponsors: React.FC<ISponsors> = () => {
           <div className="sponsors__flexbox">
             <div>
               <img src={googleLogo} />
+            </div>
+            <div>
+              <img src={stickersLogo} />
             </div>
           </div>
         </div>

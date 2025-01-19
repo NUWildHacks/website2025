@@ -40,7 +40,7 @@ export const Splash: React.FC<ISplash> = () => {
             scale: { type: "spring", visualDuration: 0.3, bounce: 0.8 },
           }}
         >
-          <span>April 4-6, 2025</span>
+          <span>April 5-6, 2025</span>
         </motion.div>
         <motion.div
           id="header__email_container"

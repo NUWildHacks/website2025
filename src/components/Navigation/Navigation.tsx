@@ -34,13 +34,15 @@ export const Navigation: React.FC<INavigation> = () => {
       <HamburgerMenu>
         <div className="navigation__bar_wrapper">
           <NavigationMotionDiv>
-            <button className="button-A">
-              <div className="button__inner_div">
-                <div className="button__bar"></div>
-                Dashboard
-                <div className="button__bar"></div>
-              </div>
-            </button>
+            <a href="https://dashboard.wildhacks.net">
+              <button className="button-A">
+                <div className="button__inner_div">
+                  <div className="button__bar"></div>
+                  Dashboard
+                  <div className="button__bar"></div>
+                </div>
+              </button>
+            </a>
           </NavigationMotionDiv>
 
           <NavigationMotionDiv>

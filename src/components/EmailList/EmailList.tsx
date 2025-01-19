@@ -2,10 +2,12 @@ import { Modal, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useDisclosure } from "@mantine/hooks";
 
+import SplashScreenButton from "./SplashScreenButton";
+
+import React from "react";
 import axios from "axios";
 
 import "./EmailList.scss";
-import React from "react";
 
 interface IEmailList {}
 
@@ -104,9 +106,20 @@ export const EmailList: React.FC<IEmailList> = () => {
           </Modal.Body>
         </Modal.Content>
       </Modal.Root>
-      <button id="email_list__button" onClick={open}>
-        Join the mailing list!
-      </button>
+
+      <div className="splash__button_container">
+        <SplashScreenButton
+          id="button__register_now"
+          onClick={() => {
+            window.location.href = "https://dashboard.wildhacks.net/";
+          }}
+        >
+          Register now!
+        </SplashScreenButton>
+        <SplashScreenButton id="button__email_list" onClick={open}>
+          Join the mailing list!
+        </SplashScreenButton>
+      </div>
     </div>
   );
 };

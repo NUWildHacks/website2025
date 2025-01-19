@@ -14,12 +14,11 @@ export const App = () => {
   return (
     <MainWrapper>
       <Navigation />
-
       <div id="landing">
         <Splash />
       </div>
 
-      <WaveVector color={colors.dark_green} waviness={0} />
+      <WaveVector color={colors.dark_green} waviness={2} />
       <div id="about">
         <AboutUs />
       </div>
