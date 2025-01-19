@@ -26,10 +26,10 @@ jobs:
         run: yarn install
       - name: Build website
         run: yarn build
-      - name: Generate redirects
-        uses: dilanx/generate-redirects@v1
-        with:
-          destination-directory: ./dist
+      # - name: Generate redirects
+      #   uses: dilanx/generate-redirects@v1
+      #   with:
+      #     destination-directory: ./dist
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
