@@ -102,7 +102,7 @@ export const AboutUs: React.FC<IAboutUs> = () => {
           <div className="about_us__header">About Us</div>
           <div className="about_us__body">
             WildHacks is Northwestern's overnight hackathon taking place
-            in-person April 4-6, 2025. As Northwestern's largest hackathon,
+            in-person April 5-6, 2025. As Northwestern's largest hackathon,
             WildHacks is an opportunity for students to learn programming skills
             and develop a final project in a collaborative and inclusive
             environment. Through workshops, mentorship, and prizes, WildHacks
