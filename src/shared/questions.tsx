@@ -140,10 +140,9 @@ export const QUESTION_LIST: Array<IQuestionList> = [
         answer: (
           <div>
             There will be a room reserved overnight dedicated to sleeping on
-            Saturday night only. Friday night will not have this accommodation.
-            However, we recommend bringing pillows and blankets. There are
+            Saturday night only. We recommend bringing pillows and blankets. There are
             showers at Mudd Library, so make sure to bring shower gel, shampoo,
-            a towel, and other things you might need. However, you're welcome to
+            a towel, and other things you might need. You're welcome to
             come to and go from the event as you please.
           </div>
         ),
