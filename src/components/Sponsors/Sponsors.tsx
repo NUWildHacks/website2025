@@ -46,9 +46,11 @@ export const Sponsors: React.FC<ISponsors> = () => {
             <div>
               <img src={googleLogo} />
             </div>
-            <div>
-              <img src={stickersLogo} />
-            </div>
+            <a href="https://www.standoutstickers.com/?utm_campaign=events-league-organizers-fall2023&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro">
+              <div>
+                <img src={stickersLogo} />
+              </div>
+            </a>
           </div>
         </div>
       </div>
