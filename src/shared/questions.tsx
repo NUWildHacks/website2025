@@ -26,7 +26,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
             <span>Sunday, April 6, 2025</span>. However, hacking won't start
             until the tracks are released on <span>April 5</span> at{" "}
             <span>11:00 AM</span>, with check in for the event starting at{" "}
-            <span>9:30 AM</span> that same day.
+            <span>9:00 AM</span> that same day.
           </div>
         ),
       },
