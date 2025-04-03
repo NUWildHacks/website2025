@@ -15,12 +15,12 @@ import WaveVector from "../WaveVector/WaveVector";
 import "./Sponsors.scss";
 
 interface ISponsor {
-  altLabel: string,
-  src: string,
-  url?: string,
-};
+  altLabel: string;
+  src: string;
+  url?: string;
+}
 
-const SponsorImage: React.FC<ISponsor> = ({altLabel, src, url}) => {
+const SponsorImage: React.FC<ISponsor> = ({ altLabel, src, url }) => {
   return (
     <a href={url}>
       <div>
@@ -28,7 +28,7 @@ const SponsorImage: React.FC<ISponsor> = ({altLabel, src, url}) => {
       </div>
     </a>
   );
-}
+};
 
 const TRANSPARENT = "#00000000";
 
@@ -50,19 +50,39 @@ export const Sponsors: React.FC = () => {
         <div className="sponsors__inner_wrapper">
           <div className="sponsors__header">Thank You To Our Sponsors</div>
           <div className="sponsors__flexbox">
-            <SponsorImage altLabel="Northwestern Department of Computer Science" src={nucsLogo} url="https://www.mccormick.northwestern.edu/computer-science/" />
+            <SponsorImage
+              altLabel="Northwestern Department of Computer Science"
+              src={nucsLogo}
+              url="https://www.mccormick.northwestern.edu/computer-science/"
+            />
             <SponsorImage altLabel="OmniStack" src={omnistackLogo} />
-            <SponsorImage altLabel="The Garage @ Northwestern" src={garageLogo} url="https://www.thegarage.northwestern.edu/" />
+            <SponsorImage
+              altLabel="The Garage @ Northwestern"
+              src={garageLogo}
+              url="https://www.thegarage.northwestern.edu/"
+            />
             <SponsorImage altLabel="Geico" src={geicoLogo} />
           </div>
           <div className="sponsors__subheader">and Our Partners</div>
           <div className="sponsors__flexbox">
             <SponsorImage altLabel="Google" src={googleLogo} />
-            <SponsorImage altLabel="Standout Stickers" src={stickersLogo} url="https://www.standoutstickers.com/?utm_campaign=events-league-organizers-fall2023&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro" />
+            <SponsorImage
+              altLabel="Standout Stickers"
+              src={stickersLogo}
+              url="https://www.standoutstickers.com/?utm_campaign=events-league-organizers-fall2023&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro"
+            />
             {/* hedgy partner, red bull partner, balsamiq partner,  doordash partner */}
-            <SponsorImage altLabel="Hedgy" src={hedgyLogo} url="https://www.hedgy.works/" />
+            <SponsorImage
+              altLabel="Hedgy"
+              src={hedgyLogo}
+              url="https://www.hedgy.works/"
+            />
             <SponsorImage altLabel="Red Bull" src={redBullLogo} />
-            <SponsorImage altLabel="Balsamiq" src={balsamiqLogo} url="https://balsamiq.com/" />
+            <SponsorImage
+              altLabel="Balsamiq"
+              src={balsamiqLogo}
+              url="https://balsamiq.com/"
+            />
           </div>
         </div>
       </div>
