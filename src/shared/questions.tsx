@@ -55,7 +55,7 @@ export const QUESTION_LIST: Array<IQuestionList> = [
             The full schedule will be released closer to the event, but check-in
             will begin at <span>9:00 AM</span> on{" "}
             <span>Saturday, April 5, 2025</span> with the opening ceremony
-            starting at <span>11:00 AM</span>, and the closing ceremony will end
+            starting at <span>10:00 AM</span>, and the closing ceremony will end
             at <span>5:00 PM</span> on <span>Sunday, April 6, 2025</span>.
           </div>
         ),
