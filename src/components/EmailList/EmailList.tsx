@@ -26,7 +26,8 @@ export const EmailList: React.FC<IEmailList> = () => {
     },
 
     validate: {
-      email: (value: string) => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
+      email: (value: string) =>
+        /^\S+@\S+$/.test(value) ? null : "Invalid email",
     },
   });
 
