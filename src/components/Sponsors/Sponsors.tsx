@@ -8,6 +8,7 @@ import balsamiqLogo from "../../assets/sponsors/balsamiq-logo.svg";
 import hedgyLogo from "../../assets/sponsors/hedgy-logo.svg";
 import garageLogo from "../../assets/sponsors/the-garage.png";
 import geicoLogo from "../../assets/sponsors/geico.svg";
+import doordashLogo from "../../assets/sponsors/doordash.svg";
 
 import { colors } from "../../shared/colors.ts";
 import WaveVector from "../WaveVector/WaveVector";
@@ -82,6 +83,10 @@ export const Sponsors: React.FC = () => {
               altLabel="Balsamiq"
               src={balsamiqLogo}
               url="https://balsamiq.com/"
+            />
+            <SponsorImage
+              altLabel="DoorDash"
+              src={doordashLogo}
             />
           </div>
         </div>
