@@ -70,8 +70,9 @@
     div {
       height: clamp(80px, 10vh, 250px);
       max-width: 100vw;
-
+      
       img {
+        object-fit: contain;
         height: 70%;
       }
     }
