@@ -3,7 +3,6 @@ import googleLogo from "../../assets/sponsors/google.png";
 import nucsLogo from "../../assets/sponsors/nucs.png";
 import omnistackLogo from "../../assets/sponsors/omnistack.png";
 import stickersLogo from "../../assets/sponsors/stand-out-stickers.svg";
-import redBullLogo from "../../assets/sponsors/redbull.svg";
 import balsamiqLogo from "../../assets/sponsors/balsamiq-logo.svg";
 import hedgyLogo from "../../assets/sponsors/hedgy-logo.svg";
 import garageLogo from "../../assets/sponsors/the-garage.png";
@@ -78,7 +77,6 @@ export const Sponsors: React.FC = () => {
               src={hedgyLogo}
               url="https://www.hedgy.works/"
             />
-            <SponsorImage altLabel="Red Bull" src={redBullLogo} />
             <SponsorImage
               altLabel="Balsamiq"
               src={balsamiqLogo}
